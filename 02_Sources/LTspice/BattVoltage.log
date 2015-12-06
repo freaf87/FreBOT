@@ -1,0 +1,57 @@
+Circuit: * D:\Projekt\Git\FreBOT\FreBOT\Extern\LTspice\BattVoltage.asc
+
+Warning: Multiple definitions of model "rfn30ts6d" Type: Diode
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.666667
+Gmin = 5.75037e-007
+vernier = 0.333333
+vernier = 0.166667
+vernier = 0.222222
+Gmin = 4.44193e-007
+vernier = 0.296296
+Gmin = 2.37135e-007
+vernier = 0.395061
+vernier = 0.526748
+Gmin = 8.65669e-008
+vernier = 0.702331
+vernier = 0.936441
+Gmin = 1.83358e-008
+vernier = 1
+Gmin = 2.09884e-009
+Gmin = 2.25361e-010
+Gmin = 2.4198e-011
+Gmin = 2.59824e-012
+Gmin = 2.78984e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Wed Jun 17 14:09:56 2015
+Total elapsed time: 0.816 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4305
+traniter = 3345
+tranpoints = 1333
+accept = 1266
+rejected = 67
+matrix size = 73
+fillins = 15
+solver = Normal
+Thread vector: 55.9/47.4[3] 26.6/33.4[1] 7.1/8.6[1] 0.7/7.4[1]  2592/500
+Matrix Compiler1: 3,96 KB object code size  4.2/2.1/[1.5]
+Matrix Compiler2: off  [1.8]/2.7/2.7
+
+

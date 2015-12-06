@@ -1,0 +1,2528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt; Developed By element14 &lt;/b&gt;&lt;p&gt; 
+
+For feedback and Technical support please contact reach from below:
+&lt;br&gt; Tech Support e-mail  : &lt;a href="mailto:CAD_Tech@element14.com"&gt;CAD_Tech@element14.com&lt;/a&gt;
+&lt;br&gt;Community website: &lt;a href=http://www.element14.com/community/community/knode/cad_tools/cadsoft_eagle/eagle_cad_libraries&gt;
+EAGLE CAD Libraries on element14&lt;/a&gt;</description>
+<packages>
+<package name="POT-EVND2A">
+<pad name="1" x="-2.5" y="0" drill="1" diameter="2"/>
+<pad name="2" x="0" y="2.5" drill="1" diameter="2"/>
+<pad name="3" x="2.5" y="0" drill="1" diameter="2"/>
+<wire x1="-3.2" y1="3.975" x2="3.2" y2="3.975" width="0.127" layer="51"/>
+<wire x1="3.2" y1="3.975" x2="3.2" y2="-0.675" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-0.675" x2="-3.2" y2="-0.675" width="0.127" layer="51"/>
+<wire x1="-3.2" y1="-0.675" x2="-3.2" y2="3.975" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="5.9" x2="-0.1" y2="4.3" width="0.127" layer="49"/>
+<wire x1="-0.4" y1="4.7" x2="-0.1" y2="4.3" width="0.127" layer="49"/>
+<wire x1="-0.1" y1="4.3" x2="0.2" y2="4.7" width="0.127" layer="49"/>
+<wire x1="-3.2" y1="1.3" x2="-3.2" y2="3.975" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="3.975" x2="3.2" y2="3.975" width="0.127" layer="21"/>
+<wire x1="3.2" y1="3.9" x2="3.2" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.7" x2="0.9" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="4.4" x2="3.8" y2="4.4" width="0.127" layer="39"/>
+<wire x1="3.8" y1="4.4" x2="3.8" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="3.8" y1="-1.2" x2="-3.9" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="-3.9" y1="-1.2" x2="-3.9" y2="4.4" width="0.127" layer="39"/>
+<text x="-4.6" y="6.4" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.2" y="-3.7" size="2" layer="27" ratio="10">&gt;Value</text>
+</package>
+<package name="POT-EVND8A">
+<pad name="1" x="-2.5" y="-2.5" drill="1" diameter="2"/>
+<pad name="2" x="0" y="2.5" drill="1" diameter="2"/>
+<pad name="3" x="2.5" y="-2.5" drill="1" diameter="2"/>
+<wire x1="-3.2" y1="3.2" x2="3.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-3.5" x2="-3.2" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.2" y1="-3.5" x2="-3.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="3.2" x2="-3.2" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="3.2" x2="-3.2" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.2" y1="3.2" x2="3.2" y2="3.2" width="0.127" layer="21"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-3.5" x2="1.3" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="3.8" x2="3.8" y2="3.8" width="0.127" layer="39"/>
+<wire x1="3.8" y1="3.8" x2="3.8" y2="-3.8" width="0.127" layer="39"/>
+<wire x1="3.8" y1="-3.8" x2="-3.9" y2="-3.8" width="0.127" layer="39"/>
+<wire x1="-3.9" y1="-3.8" x2="-3.9" y2="3.8" width="0.127" layer="39"/>
+<text x="-4.2" y="4.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.8" y="-6.6" size="2" layer="27" ratio="10">&gt;Value</text>
+</package>
+<package name="POT-EVNDCA">
+<pad name="1" x="-2.5" y="-2.5" drill="1" diameter="2"/>
+<pad name="2" x="0" y="0" drill="1" diameter="2"/>
+<pad name="3" x="2.5" y="-2.5" drill="1" diameter="2"/>
+<wire x1="-3.2" y1="0.9" x2="3.2" y2="0.9" width="0.127" layer="51"/>
+<wire x1="3.2" y1="0.9" x2="3.2" y2="-5.9" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-5.9" x2="-3.2" y2="-5.9" width="0.127" layer="51"/>
+<wire x1="-3.2" y1="-5.9" x2="-3.2" y2="0.9" width="0.127" layer="51"/>
+<wire x1="-0.1" y1="3.4" x2="-0.1" y2="1.8" width="0.127" layer="49"/>
+<wire x1="-0.4" y1="2.2" x2="-0.1" y2="1.8" width="0.127" layer="49"/>
+<wire x1="-0.1" y1="1.8" x2="0.2" y2="2.2" width="0.127" layer="49"/>
+<wire x1="-3.2" y1="-1.2" x2="-3.2" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="0.9" x2="3.2" y2="0.9" width="0.127" layer="21"/>
+<wire x1="3.2" y1="0.9" x2="3.2" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="1.3" x2="3.8" y2="1.3" width="0.127" layer="39"/>
+<wire x1="3.8" y1="1.3" x2="3.8" y2="-6.3" width="0.127" layer="39"/>
+<wire x1="3.8" y1="-6.3" x2="-3.9" y2="-6.3" width="0.127" layer="39"/>
+<wire x1="-3.9" y1="-6.3" x2="-3.9" y2="1.3" width="0.127" layer="39"/>
+<text x="-4.6" y="3.9" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-5.2" y="-8.8" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="-3.2" y1="-3.8" x2="-3.2" y2="-5.9" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-5.9" x2="3.2" y2="-5.9" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-5.9" x2="3.2" y2="-3.7" width="0.127" layer="21"/>
+</package>
+<package name="POT-EVNDJA">
+<pad name="1" x="-2.5" y="-0.25" drill="1" diameter="2"/>
+<pad name="2" x="0" y="2.75" drill="1" diameter="2"/>
+<pad name="3" x="2.5" y="-0.25" drill="1" diameter="2"/>
+<wire x1="-3.2" y1="3.2" x2="3.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.2" y1="-3.5" x2="-3.2" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.2" y1="-3.5" x2="-3.2" y2="3.2" width="0.127" layer="51"/>
+<wire x1="-3.9" y1="4.2" x2="3.8" y2="4.2" width="0.127" layer="39"/>
+<wire x1="3.8" y1="4.2" x2="3.8" y2="-3.9" width="0.127" layer="39"/>
+<wire x1="3.8" y1="-3.9" x2="-3.9" y2="-3.9" width="0.127" layer="39"/>
+<wire x1="-3.9" y1="-3.9" x2="-3.9" y2="4.2" width="0.127" layer="39"/>
+<text x="-3.8" y="5.1" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.4" y="-6.4" size="2" layer="27" ratio="10">&gt;Value</text>
+<hole x="0" y="0" drill="2.5"/>
+<wire x1="-3.2" y1="1" x2="-3.2" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="3.2" x2="-1.5" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="3.2" x2="3.2" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-1.7" x2="-3.2" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-3.5" x2="3.2" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-3.5" x2="3.2" y2="-1.6" width="0.2032" layer="21"/>
+</package>
+<package name="POT-EVUE2A">
+<pad name="1" x="0" y="-2.5" drill="1.1" diameter="2"/>
+<pad name="2" x="0" y="0" drill="1.1" diameter="2"/>
+<pad name="3" x="0" y="2.5" drill="1.1" diameter="2"/>
+<hole x="-3.3" y="-4.9" drill="2.6"/>
+<hole x="-3.3" y="4.9" drill="2.6"/>
+<wire x1="-5.7" y1="4.85" x2="4.65" y2="4.85" width="0.127" layer="51"/>
+<wire x1="4.65" y1="4.85" x2="4.65" y2="-4.85" width="0.127" layer="51"/>
+<wire x1="4.65" y1="-4.85" x2="-5.7" y2="-4.85" width="0.127" layer="51"/>
+<wire x1="-5.7" y1="-4.85" x2="-5.7" y2="4.85" width="0.127" layer="51"/>
+<wire x1="4.7" y1="3" x2="21.7" y2="3" width="0.127" layer="51"/>
+<wire x1="21.7" y1="3" x2="21.7" y2="-3" width="0.127" layer="51"/>
+<wire x1="21.7" y1="-3" x2="4.7" y2="-3" width="0.127" layer="51"/>
+<text x="-4.6" y="7.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-5.4" y="-8.8" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="-1.3" y1="4.85" x2="4.65" y2="4.85" width="0.127" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.65" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="4.65" y1="-4.85" x2="-1.4" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="4.85" x2="-5.7" y2="4.85" width="0.127" layer="21"/>
+<wire x1="-5.7" y1="4.85" x2="-5.7" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-5.7" y1="-4.85" x2="-4.8" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="4.7" y1="3" x2="21.7" y2="3" width="0.127" layer="21"/>
+<wire x1="21.7" y1="3" x2="21.7" y2="-3" width="0.127" layer="21"/>
+<wire x1="21.7" y1="-3" x2="4.7" y2="-3" width="0.127" layer="21"/>
+</package>
+<package name="POT-EVUE2J">
+<pad name="1" x="0" y="-2.5" drill="1.1" diameter="2"/>
+<pad name="2" x="0" y="0" drill="1.1" diameter="2"/>
+<pad name="3" x="0" y="2.5" drill="1.1" diameter="2"/>
+<hole x="-2.2" y="-4.9" drill="2.6"/>
+<hole x="-2.2" y="4.9" drill="2.6"/>
+<wire x1="-4.6" y1="4.85" x2="5.3" y2="4.85" width="0.127" layer="51"/>
+<wire x1="5.3" y1="4.85" x2="5.3" y2="3" width="0.127" layer="51"/>
+<wire x1="5.3" y1="3" x2="5.3" y2="-3" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-3" x2="5.3" y2="-4.85" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-4.85" x2="-4.6" y2="-4.85" width="0.127" layer="51"/>
+<wire x1="-4.6" y1="-4.85" x2="-4.6" y2="4.85" width="0.127" layer="51"/>
+<wire x1="5.3" y1="3" x2="22.8" y2="3" width="0.127" layer="51"/>
+<wire x1="22.8" y1="3" x2="22.8" y2="-3" width="0.127" layer="51"/>
+<wire x1="22.8" y1="-3" x2="5.3" y2="-3" width="0.127" layer="51"/>
+<text x="-4.6" y="7.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-5.4" y="-8.8" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="5.3" y1="3" x2="22.8" y2="3" width="0.127" layer="21"/>
+<wire x1="22.8" y1="3" x2="22.8" y2="-3" width="0.127" layer="21"/>
+<wire x1="22.8" y1="-3" x2="5.3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="4.85" x2="5.3" y2="4.85" width="0.127" layer="21"/>
+<wire x1="5.3" y1="4.85" x2="5.3" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="5.3" y1="-4.85" x2="-0.2" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="4.85" x2="-4.6" y2="4.85" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="4.85" x2="-4.6" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="-4.85" x2="-3.9" y2="-4.85" width="0.127" layer="21"/>
+</package>
+<package name="POT-EVUF2A">
+<pad name="1" x="-2.5" y="-7" drill="1.1" diameter="2"/>
+<pad name="2" x="0" y="-7" drill="1.1" diameter="2"/>
+<pad name="3" x="2.5" y="-7" drill="1.1" diameter="2"/>
+<hole x="4.5" y="0" drill="2.6"/>
+<hole x="-4.5" y="0" drill="2.6"/>
+<text x="-4.1" y="6.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.5" y="-10.5" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="-4.85" y1="5.5" x2="4.85" y2="5.5" width="0.2032" layer="51"/>
+<wire x1="4.85" y1="5.5" x2="4.85" y2="-6" width="0.2032" layer="51"/>
+<wire x1="4.85" y1="-6" x2="-4.85" y2="-6" width="0.2032" layer="51"/>
+<wire x1="-4.85" y1="-6" x2="-4.85" y2="5.5" width="0.2032" layer="51"/>
+<wire x1="-4.85" y1="2.2" x2="-4.85" y2="5.5" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="5.5" x2="4.85" y2="5.5" width="0.2032" layer="21"/>
+<wire x1="4.85" y1="5.5" x2="4.85" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-2.1" x2="-4.85" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-6" x2="-3.9" y2="-6" width="0.2032" layer="21"/>
+<wire x1="3.9" y1="-6" x2="4.85" y2="-6" width="0.2032" layer="21"/>
+<wire x1="4.85" y1="-6" x2="4.85" y2="-1.9" width="0.2032" layer="21"/>
+</package>
+<package name="POT-EVUF2L">
+<pad name="1" x="-2.5" y="-7" drill="1.1" diameter="2"/>
+<pad name="2" x="0" y="-7" drill="1.1" diameter="2"/>
+<pad name="3" x="2.5" y="-7" drill="1.1" diameter="2"/>
+<hole x="4.5" y="0" drill="2.6"/>
+<hole x="-4.5" y="0" drill="2.6"/>
+<text x="-4.1" y="6.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.5" y="-10.5" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="-4.85" y1="6" x2="4.85" y2="6" width="0.2032" layer="51"/>
+<wire x1="4.85" y1="6" x2="4.85" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="4.85" y1="-6.5" x2="-4.85" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="-4.85" y1="-6.5" x2="-4.85" y2="6" width="0.2032" layer="51"/>
+<wire x1="-4.85" y1="2.2" x2="-4.85" y2="6" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="6" x2="4.85" y2="6" width="0.2032" layer="21"/>
+<wire x1="4.85" y1="6" x2="4.85" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-2.1" x2="-4.85" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-6.5" x2="-3.9" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="3.9" y1="-6.5" x2="4.85" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="4.85" y1="-6.5" x2="4.85" y2="-1.9" width="0.2032" layer="21"/>
+</package>
+<package name="POT-EVUE2K">
+<pad name="1" x="0" y="-2.5" drill="1.1" diameter="2"/>
+<pad name="2" x="0" y="0" drill="1.1" diameter="2"/>
+<pad name="3" x="0" y="2.5" drill="1.1" diameter="2"/>
+<hole x="-2.2" y="-4.9" drill="2.6"/>
+<hole x="-2.2" y="4.9" drill="2.6"/>
+<wire x1="-4.6" y1="4.85" x2="5.3" y2="4.85" width="0.127" layer="51"/>
+<wire x1="5.3" y1="4.85" x2="5.3" y2="3" width="0.127" layer="51"/>
+<wire x1="5.3" y1="3" x2="5.3" y2="-3" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-3" x2="5.3" y2="-4.85" width="0.127" layer="51"/>
+<wire x1="5.3" y1="-4.85" x2="-4.6" y2="-4.85" width="0.127" layer="51"/>
+<wire x1="-4.6" y1="-4.85" x2="-4.6" y2="4.85" width="0.127" layer="51"/>
+<wire x1="5.3" y1="3" x2="22.8" y2="3" width="0.127" layer="51"/>
+<wire x1="22.8" y1="3" x2="22.8" y2="-3" width="0.127" layer="51"/>
+<wire x1="22.8" y1="-3" x2="5.3" y2="-3" width="0.127" layer="51"/>
+<text x="-4.6" y="7.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-5.4" y="-8.8" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="5.3" y1="3" x2="22.8" y2="3" width="0.127" layer="21"/>
+<wire x1="22.8" y1="3" x2="22.8" y2="-3" width="0.127" layer="21"/>
+<wire x1="22.8" y1="-3" x2="5.3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="4.85" x2="5.3" y2="4.85" width="0.127" layer="21"/>
+<wire x1="5.3" y1="4.85" x2="5.3" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="5.3" y1="-4.85" x2="-0.2" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-3.9" y1="4.85" x2="-4.6" y2="4.85" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="4.85" x2="-4.6" y2="-4.85" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="-4.85" x2="-3.9" y2="-4.85" width="0.127" layer="21"/>
+</package>
+<package name="POT-EVUF2M">
+<pad name="1" x="-2.5" y="-7" drill="1.1" diameter="2"/>
+<pad name="2" x="0" y="-7" drill="1.1" diameter="2"/>
+<pad name="3" x="2.5" y="-7" drill="1.1" diameter="2"/>
+<hole x="4.5" y="0" drill="2.6"/>
+<hole x="-4.5" y="0" drill="2.6"/>
+<text x="-4.1" y="6.5" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.5" y="-10.5" size="2" layer="27" ratio="10">&gt;Value</text>
+<wire x1="-4.85" y1="6" x2="4.85" y2="6" width="0.2032" layer="51"/>
+<wire x1="4.85" y1="6" x2="4.85" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="4.85" y1="-6.5" x2="-4.85" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="-4.85" y1="-6.5" x2="-4.85" y2="6" width="0.2032" layer="51"/>
+<wire x1="-4.85" y1="2.2" x2="-4.85" y2="6" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="6" x2="4.85" y2="6" width="0.2032" layer="21"/>
+<wire x1="4.85" y1="6" x2="4.85" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-2.1" x2="-4.85" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="-4.85" y1="-6.5" x2="-3.9" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="3.9" y1="-6.5" x2="4.85" y2="-6.5" width="0.2032" layer="21"/>
+<wire x1="4.85" y1="-6.5" x2="4.85" y2="-1.9" width="0.2032" layer="21"/>
+</package>
+<package name="POT_EVM1D">
+<smd name="1" x="-1.4478" y="-1.8542" dx="1.2954" dy="1.4986" layer="1"/>
+<smd name="2" x="0" y="1.9558" dx="2.3876" dy="1.1938" layer="1"/>
+<smd name="3" x="1.4478" y="-1.8542" dx="1.2954" dy="1.4986" layer="1"/>
+<wire x1="2.3622" y1="-2.8448" x2="-2.3622" y2="-2.8448" width="0.1524" layer="39"/>
+<wire x1="-2.3622" y1="-2.8448" x2="-2.3622" y2="2.794" width="0.1524" layer="39"/>
+<wire x1="-2.3622" y1="2.794" x2="2.3622" y2="2.794" width="0.1524" layer="39"/>
+<wire x1="2.3622" y1="2.794" x2="2.3622" y2="-2.8448" width="0.1524" layer="39"/>
+<wire x1="-1.524" y1="2.2606" x2="-1.905" y2="2.2606" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.2606" x2="-1.905" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.2606" x2="1.905" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.2606" x2="1.524" y2="2.2606" width="0.1524" layer="21"/>
+<wire x1="-0.4572" y1="-2.2606" x2="0.4572" y2="-2.2606" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.2606" x2="-1.905" y2="-2.2606" width="0.1524" layer="51"/>
+<wire x1="1.905" y1="2.2606" x2="1.905" y2="-2.2606" width="0.1524" layer="51"/>
+<wire x1="1.905" y1="2.2606" x2="-1.905" y2="2.2606" width="0.1524" layer="51"/>
+<wire x1="-1.905" y1="-2.2606" x2="1.905" y2="-2.2606" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="1.143" x2="-0.2286" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="1.143" x2="0.2286" y2="1.143" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="1.143" x2="0.2286" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="0.2286" x2="1.143" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="1.143" y1="0.2286" x2="1.143" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="-0.2286" x2="1.143" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="0.2286" y1="-1.143" x2="0.2286" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-1.143" y1="0.2286" x2="-1.143" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="-1.143" x2="-0.2286" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="0.2286" x2="-1.143" y2="0.2286" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="-1.143" x2="0.2286" y2="-1.143" width="0.1524" layer="51"/>
+<wire x1="-0.2286" y1="-0.2286" x2="-1.143" y2="-0.2286" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="0" x2="-1.4224" y2="0" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.4224" y1="0" x2="1.4224" y2="0" width="0.1524" layer="51" curve="-180"/>
+<text x="-2.9972" y="3.1242" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.6068" y="-4.6736" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="POT_EVM2N">
+<smd name="1" x="-0.6604" y="-1.4478" dx="0.6096" dy="0.889" layer="1"/>
+<smd name="2" x="0" y="1.0922" dx="1.1938" dy="0.889" layer="1"/>
+<smd name="3" x="0.6604" y="-1.4478" dx="0.6096" dy="0.889" layer="1"/>
+<wire x1="1.2192" y1="-2.159" x2="-1.2192" y2="-2.159" width="0.1524" layer="39"/>
+<wire x1="-1.2192" y1="-2.159" x2="-1.2192" y2="1.8034" width="0.1524" layer="39"/>
+<wire x1="-1.2192" y1="1.8034" x2="1.2192" y2="1.8034" width="0.1524" layer="39"/>
+<wire x1="1.2192" y1="1.8034" x2="1.2192" y2="-2.159" width="0.1524" layer="39"/>
+<wire x1="-1.0922" y1="1.397" x2="-1.0922" y2="-0.6858" width="0.1524" layer="21"/>
+<wire x1="1.0922" y1="1.397" x2="1.0922" y2="-0.6858" width="0.1524" layer="21"/>
+<wire x1="1.0922" y1="1.397" x2="0.9398" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-0.9398" y1="1.397" x2="-1.0922" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-1.0922" y1="1.397" x2="-1.0922" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="1.0922" y1="1.397" x2="1.0922" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="1.0922" y1="1.397" x2="-1.0922" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-1.0922" y1="-1.397" x2="1.0922" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="0.6604" x2="-0.127" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="0.6604" x2="0.127" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="0.6604" x2="0.127" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="0.127" x2="0.6604" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.127" x2="0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-0.127" x2="0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-0.6604" x2="0.127" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.127" x2="-0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="-0.6604" x2="-0.127" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="0.127" x2="-0.6604" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="-0.6604" x2="0.127" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="-0.127" x2="-0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.8128" y1="0" x2="-0.8128" y2="0" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.8128" y1="0" x2="0.8128" y2="0" width="0.1524" layer="51" curve="-180"/>
+<text x="-2.9464" y="2.0828" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.4036" y="-4.0132" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="POT_EVM2W">
+<smd name="1" x="-0.6604" y="-1.2954" dx="0.6096" dy="0.889" layer="1"/>
+<smd name="2" x="0" y="1.1938" dx="1.1938" dy="1.0922" layer="1"/>
+<smd name="3" x="0.6604" y="-1.2954" dx="0.6096" dy="0.889" layer="1"/>
+<wire x1="1.2192" y1="-2.0066" x2="-1.2192" y2="-2.0066" width="0.1524" layer="39"/>
+<wire x1="-1.2192" y1="-2.0066" x2="-1.2192" y2="2.0066" width="0.1524" layer="39"/>
+<wire x1="-1.2192" y1="2.0066" x2="1.2192" y2="2.0066" width="0.1524" layer="39"/>
+<wire x1="1.2192" y1="2.0066" x2="1.2192" y2="-2.0066" width="0.1524" layer="39"/>
+<wire x1="-1.0922" y1="1.3716" x2="-1.0922" y2="-0.5588" width="0.1524" layer="21"/>
+<wire x1="1.0922" y1="1.3716" x2="1.0922" y2="-0.5588" width="0.1524" layer="21"/>
+<wire x1="1.0922" y1="1.3716" x2="0.9398" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="-0.9398" y1="1.3716" x2="-1.0922" y2="1.3716" width="0.1524" layer="21"/>
+<wire x1="-1.0922" y1="1.3716" x2="-1.0922" y2="-1.3716" width="0.1524" layer="51"/>
+<wire x1="1.0922" y1="1.3716" x2="1.0922" y2="-1.3716" width="0.1524" layer="51"/>
+<wire x1="1.0922" y1="1.3716" x2="-1.0922" y2="1.3716" width="0.1524" layer="51"/>
+<wire x1="-1.0922" y1="-1.3716" x2="1.0922" y2="-1.3716" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="0.6604" x2="-0.127" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="0.6604" x2="0.127" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="0.6604" x2="0.127" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="0.127" x2="0.6604" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="0.6604" y1="0.127" x2="0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-0.127" x2="0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.127" y1="-0.6604" x2="0.127" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.6604" y1="0.127" x2="-0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="-0.6604" x2="-0.127" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="0.127" x2="-0.6604" y2="0.127" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="-0.6604" x2="0.127" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.127" y1="-0.127" x2="-0.6604" y2="-0.127" width="0.1524" layer="51"/>
+<wire x1="0.8128" y1="0" x2="-0.8128" y2="0" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.8128" y1="0" x2="0.8128" y2="0" width="0.1524" layer="51" curve="-180"/>
+<text x="-2.8448" y="2.5908" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.6068" y="-3.6576" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="POT_EVM3W">
+<smd name="1" x="-0.9906" y="-1.6002" dx="1.1938" dy="1.1938" layer="1"/>
+<smd name="2" x="0" y="1.651" dx="1.6002" dy="1.4986" layer="1"/>
+<smd name="3" x="0.9906" y="-1.6002" dx="1.1938" dy="1.1938" layer="1"/>
+<wire x1="1.1684" y1="0" x2="-1.1684" y2="0" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.1684" y1="0" x2="1.1684" y2="0" width="0.1524" layer="51" curve="-180"/>
+<text x="-2.8956" y="3.1496" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.556" y="-4.0894" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<wire x1="1.8542" y1="-2.4638" x2="-1.8542" y2="-2.4638" width="0.1524" layer="39"/>
+<wire x1="-1.8542" y1="-2.4638" x2="-1.8542" y2="2.6416" width="0.1524" layer="39"/>
+<wire x1="-1.8542" y1="2.6416" x2="1.8542" y2="2.6416" width="0.1524" layer="39"/>
+<wire x1="1.8542" y1="2.6416" x2="1.8542" y2="-2.4638" width="0.1524" layer="39"/>
+<wire x1="-1.5494" y1="1.8796" x2="-1.5494" y2="-0.6604" width="0.1524" layer="21"/>
+<wire x1="1.5494" y1="1.8796" x2="1.5494" y2="-0.6604" width="0.1524" layer="21"/>
+<wire x1="1.5494" y1="1.8796" x2="1.143" y2="1.8796" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="1.8796" x2="-1.5494" y2="1.8796" width="0.1524" layer="21"/>
+<wire x1="-1.5494" y1="1.8796" x2="-1.5494" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="1.5494" y1="1.8796" x2="1.5494" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="1.5494" y1="1.8796" x2="-1.5494" y2="1.8796" width="0.1524" layer="51"/>
+<wire x1="-1.5494" y1="-1.8796" x2="1.5494" y2="-1.8796" width="0.1524" layer="51"/>
+<wire x1="-0.2032" y1="0.9398" x2="-0.2032" y2="0.2032" width="0.1524" layer="51"/>
+<wire x1="-0.2032" y1="0.9398" x2="0.2032" y2="0.9398" width="0.1524" layer="51"/>
+<wire x1="0.2032" y1="0.9398" x2="0.2032" y2="0.2032" width="0.1524" layer="51"/>
+<wire x1="0.2032" y1="0.2032" x2="0.9398" y2="0.2032" width="0.1524" layer="51"/>
+<wire x1="0.9398" y1="0.2032" x2="0.9398" y2="-0.2032" width="0.1524" layer="51"/>
+<wire x1="0.2032" y1="-0.2032" x2="0.9398" y2="-0.2032" width="0.1524" layer="51"/>
+<wire x1="0.2032" y1="-0.9398" x2="0.2032" y2="-0.2032" width="0.1524" layer="51"/>
+<wire x1="-0.9398" y1="0.2032" x2="-0.9398" y2="-0.2032" width="0.1524" layer="51"/>
+<wire x1="-0.2032" y1="-0.9398" x2="-0.2032" y2="-0.2032" width="0.1524" layer="51"/>
+<wire x1="-0.2032" y1="0.2032" x2="-0.9398" y2="0.2032" width="0.1524" layer="51"/>
+<wire x1="-0.2032" y1="-0.9398" x2="0.2032" y2="-0.9398" width="0.1524" layer="51"/>
+<wire x1="-0.2032" y1="-0.2032" x2="-0.9398" y2="-0.2032" width="0.1524" layer="51"/>
+<wire x1="1.1684" y1="0" x2="-1.1684" y2="0" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-1.1684" y1="0" x2="1.1684" y2="0" width="0.1524" layer="51" curve="-180"/>
+<text x="-2.8956" y="3.1496" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.556" y="-4.0894" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="POT_EVMAAS">
+<pad name="1" x="-5.0038" y="0" drill="1.3208" shape="square"/>
+<pad name="2" x="-2.4892" y="2.9972" drill="1.3208"/>
+<pad name="3" x="0" y="0" drill="1.3208"/>
+<smd name="4" x="-2.4892" y="0.2794" dx="0" dy="0" layer="1" roundness="100"/>
+<wire x1="1.4986" y1="-4.4196" x2="-6.5024" y2="-4.4196" width="0.1524" layer="39"/>
+<wire x1="-6.5024" y1="-4.4196" x2="-6.5024" y2="4.7498" width="0.1524" layer="39"/>
+<wire x1="-6.5024" y1="4.7498" x2="1.4986" y2="4.7498" width="0.1524" layer="39"/>
+<wire x1="1.4986" y1="4.7498" x2="1.4986" y2="-4.4196" width="0.1524" layer="39"/>
+<wire x1="0.9398" y1="1.27" x2="0.9398" y2="3.9116" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="3.9116" x2="-5.9436" y2="3.9116" width="0.1524" layer="21"/>
+<wire x1="-5.9436" y1="-1.5748" x2="-5.9436" y2="-3.9116" width="0.1524" layer="21"/>
+<wire x1="-5.9436" y1="-3.9116" x2="0.9398" y2="-3.9116" width="0.1524" layer="21"/>
+<wire x1="0.9398" y1="-3.9116" x2="0.9398" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.9398" y1="3.9116" x2="-1.1938" y2="3.9116" width="0.1524" layer="21"/>
+<wire x1="-5.9436" y1="3.9116" x2="-5.9436" y2="1.5748" width="0.1524" layer="21"/>
+<wire x1="-2.921" y1="2.3622" x2="-2.921" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-2.921" y1="2.3622" x2="-2.0574" y2="2.3622" width="0.1524" layer="51"/>
+<wire x1="-2.0574" y1="2.3622" x2="-2.0574" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-2.0574" y1="0.7112" x2="-0.4318" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-0.4318" y1="0.7112" x2="-0.4318" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-2.0574" y1="-0.1524" x2="-0.4318" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-2.0574" y1="-1.778" x2="-2.0574" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-4.572" y1="0.7112" x2="-4.572" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-2.921" y1="-1.778" x2="-2.921" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-2.921" y1="0.7112" x2="-4.572" y2="0.7112" width="0.1524" layer="51"/>
+<wire x1="-2.921" y1="-1.778" x2="-2.0574" y2="-1.778" width="0.1524" layer="51"/>
+<wire x1="-2.921" y1="-0.1524" x2="-4.572" y2="-0.1524" width="0.1524" layer="51"/>
+<wire x1="-5.9436" y1="-3.9116" x2="0.9398" y2="-3.9116" width="0.1524" layer="51"/>
+<wire x1="0.9398" y1="-3.9116" x2="0.9398" y2="3.9116" width="0.1524" layer="51"/>
+<wire x1="0.9398" y1="3.9116" x2="-5.9436" y2="3.9116" width="0.1524" layer="51"/>
+<wire x1="-5.9436" y1="3.9116" x2="-5.9436" y2="-3.9116" width="0.1524" layer="51"/>
+<wire x1="0.0762" y1="0.2794" x2="-5.08" y2="0.2794" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-5.08" y1="0.2794" x2="0.0762" y2="0.2794" width="0.1524" layer="51" curve="-180"/>
+<text x="-5.4864" y="5.3086" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-6.0198" y="-6.0452" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="POT_EVBJQ">
+<pad name="1" x="-1.75" y="-63.75" drill="1.6" diameter="3"/>
+<pad name="2" x="-5.25" y="-63.75" drill="1.6" diameter="3"/>
+<pad name="3" x="-5.25" y="63.75" drill="1.6" diameter="3"/>
+<pad name="1'" x="1.75" y="-63.75" drill="1.6" diameter="3"/>
+<pad name="2'" x="5.25" y="-63.75" drill="1.6" diameter="3"/>
+<pad name="3'" x="1.75" y="63.75" drill="1.6" diameter="3"/>
+<pad name="4" x="0" y="-48" drill="2" diameter="4"/>
+<pad name="5" x="0" y="48" drill="2" diameter="4"/>
+<wire x1="-7.5" y1="64.5" x2="7.5" y2="64.5" width="0.127" layer="51"/>
+<wire x1="7.5" y1="64.5" x2="7.5" y2="-64.5" width="0.127" layer="51"/>
+<wire x1="7.5" y1="-64.5" x2="-7.5" y2="-64.5" width="0.127" layer="51"/>
+<wire x1="-7.5" y1="-64.5" x2="-7.5" y2="64.5" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="50" x2="-0.6" y2="-50" width="0.127" layer="51"/>
+<wire x1="-0.6" y1="-50" x2="0.6" y2="-50" width="0.127" layer="51"/>
+<wire x1="0.6" y1="-50" x2="0.6" y2="50" width="0.127" layer="51"/>
+<wire x1="0.6" y1="50" x2="-0.6" y2="50" width="0.127" layer="51"/>
+<wire x1="7.5" y1="64.4" x2="7.5" y2="-64.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-64.8" x2="-7.5" y2="64.5" width="0.127" layer="21"/>
+<wire x1="0.6" y1="45.5" x2="0.6" y2="-45.5" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-45.5" x2="-0.6" y2="45.5" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="64.5" x2="-0.2" y2="64.5" width="0.127" layer="21"/>
+<wire x1="4.2" y1="64.5" x2="7.5" y2="64.5" width="0.127" layer="21"/>
+<wire x1="7.5" y1="64.5" x2="7.5" y2="64.4" width="0.127" layer="21"/>
+<text x="-4.4" y="67.8" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.6" y="-70.1" size="2" layer="27" ratio="10">&gt;Value</text>
+</package>
+<package name="POT_EVJC20">
+<text x="-4.11" y="6.23" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-3.91" y="-27.07" size="2" layer="27" ratio="10">&gt;Value</text>
+<hole x="-7.1" y="3.3" drill="3"/>
+<hole x="7.1" y="3.3" drill="3"/>
+<pad name="1" x="-3" y="0" drill="0.8" diameter="1.6"/>
+<pad name="2" x="-5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="3" x="5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="1'" x="-1" y="0" drill="0.8" diameter="1.6"/>
+<pad name="2'" x="1" y="0" drill="0.8" diameter="1.6"/>
+<pad name="3'" x="3" y="0" drill="0.8" diameter="1.6"/>
+<wire x1="-6.1" y1="5.8" x2="6.1" y2="5.8" width="0.127" layer="51"/>
+<wire x1="6.1" y1="5.8" x2="6.1" y2="-4.2" width="0.127" layer="51"/>
+<wire x1="6.1" y1="-4.2" x2="4" y2="-4.2" width="0.127" layer="51"/>
+<wire x1="4" y1="-4.2" x2="-4" y2="-4.2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-4.2" x2="-6.1" y2="-4.2" width="0.127" layer="51"/>
+<wire x1="-6.1" y1="-4.2" x2="-6.1" y2="5.8" width="0.127" layer="51"/>
+<wire x1="-4" y1="-4.2" x2="-4" y2="-24.2" width="0.127" layer="51"/>
+<wire x1="-4" y1="-24.2" x2="4" y2="-24.2" width="0.127" layer="51"/>
+<wire x1="4" y1="-24.2" x2="4" y2="-4.2" width="0.127" layer="51"/>
+<wire x1="6.1" y1="5.8" x2="6.1" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="6.1" y1="-4.2" x2="4" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="4" y1="-4.2" x2="-4" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.2" x2="-6.1" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="-4.2" x2="-6.1" y2="5.8" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.2" x2="-4" y2="-24.2" width="0.127" layer="21"/>
+<wire x1="-4" y1="-24.2" x2="4" y2="-24.2" width="0.127" layer="21"/>
+<wire x1="4" y1="-24.2" x2="4" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="5.8" x2="6.1" y2="5.8" width="0.127" layer="21"/>
+</package>
+<package name="POT_EVJY91">
+<text x="-4.11" y="19.23" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.91" y="-4.07" size="2" layer="27" ratio="10">&gt;Value</text>
+<hole x="-5.5" y="11" drill="3"/>
+<hole x="5.5" y="11" drill="3"/>
+<pad name="1" x="-3" y="0" drill="0.8" diameter="1.6"/>
+<pad name="2" x="-5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="3" x="5" y="0" drill="0.8" diameter="1.6"/>
+<pad name="1'" x="-1" y="0" drill="0.8" diameter="1.6"/>
+<pad name="2'" x="1" y="0" drill="0.8" diameter="1.6"/>
+<pad name="3'" x="3" y="0" drill="0.8" diameter="1.6"/>
+<wire x1="-6.55" y1="17.8" x2="6.55" y2="17.8" width="0.127" layer="51"/>
+<wire x1="6.55" y1="17.8" x2="6.55" y2="2.3" width="0.127" layer="51"/>
+<wire x1="6.55" y1="2.3" x2="-6.55" y2="2.3" width="0.127" layer="51"/>
+<wire x1="-6.55" y1="2.3" x2="-6.55" y2="17.8" width="0.127" layer="51"/>
+<wire x1="-6.55" y1="12.7" x2="-6.55" y2="17.8" width="0.127" layer="21"/>
+<wire x1="-6.55" y1="17.8" x2="6.6" y2="17.8" width="0.127" layer="21"/>
+<wire x1="6.6" y1="17.8" x2="6.6" y2="17.1" width="0.127" layer="21"/>
+<wire x1="6.6" y1="17.1" x2="6.6" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-6.55" y1="9.4" x2="-6.55" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-6.55" y1="2.3" x2="6.55" y2="2.3" width="0.127" layer="21"/>
+<wire x1="6.55" y1="2.3" x2="6.55" y2="9.5" width="0.127" layer="21"/>
+</package>
+<package name="POT_EWAP1">
+<text x="-2.3864" y="31.5086" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.2198" y="-32.4452" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<pad name="1" x="3.75" y="24.5" drill="1.3" diameter="2.6"/>
+<pad name="2" x="3.76" y="27.5" drill="1.3" diameter="2.6"/>
+<pad name="3" x="3.75" y="-27.5" drill="1.3" diameter="2.6"/>
+<pad name="1'" x="-3.75" y="26" drill="1.3" diameter="2.6"/>
+<pad name="2'" x="-3.75" y="29" drill="1.3" diameter="2.6"/>
+<pad name="3'" x="-3.75" y="-29" drill="1.3" diameter="2.6"/>
+<pad name="3$" x="3.75" y="-24.5" drill="1.3" diameter="2.6"/>
+<pad name="3$'" x="-3.75" y="-26" drill="1.3" diameter="2.6"/>
+<pad name="4" x="4.4" y="-5" drill="1.5" diameter="3"/>
+<pad name="5" x="-4.4" y="0" drill="1.5" diameter="3"/>
+<wire x1="-4" y1="30" x2="4" y2="30" width="0.127" layer="51"/>
+<wire x1="4" y1="30" x2="4" y2="-30" width="0.127" layer="51"/>
+<wire x1="4" y1="-30" x2="-4" y2="-30" width="0.127" layer="51"/>
+<wire x1="-4" y1="-30" x2="-4" y2="30" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="22.5" x2="1.5" y2="22.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="22.5" x2="1.5" y2="-22.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-22.5" x2="-1.5" y2="-22.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-22.5" x2="-1.5" y2="22.5" width="0.127" layer="51"/>
+<wire x1="-4" y1="-2" x2="-4" y2="-24.4" width="0.1524" layer="21"/>
+<wire x1="4" y1="-22.6" x2="4" y2="-7.2" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-30" x2="4" y2="-30" width="0.1524" layer="21"/>
+<wire x1="4" y1="-30" x2="4" y2="-29.4" width="0.1524" layer="21"/>
+<wire x1="4" y1="22.6" x2="4" y2="-2.3" width="0.1524" layer="21"/>
+<wire x1="-4" y1="24" x2="-4" y2="2.1" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="30" x2="4" y2="30" width="0.1524" layer="21"/>
+<wire x1="4" y1="30" x2="4" y2="29.4" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="22.5" x2="1.5" y2="22.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="22.5" x2="1.5" y2="-22.5" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-22.5" x2="-1.5" y2="-22.5" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="-22.5" x2="-1.5" y2="22.5" width="0.1524" layer="21"/>
+</package>
+<package name="POT_EWAQ1">
+<text x="-2.3864" y="38.4086" size="1.27" layer="25" ratio="6" rot="SR0">&gt;NAME</text>
+<text x="-3.7198" y="-40.0452" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
+<pad name="1" x="3.75" y="32" drill="1.3" diameter="2.6"/>
+<pad name="2" x="3.76" y="35" drill="1.3" diameter="2.6"/>
+<pad name="3" x="3.75" y="-35" drill="1.3" diameter="2.6"/>
+<pad name="1'" x="-3.75" y="33.5" drill="1.3" diameter="2.6"/>
+<pad name="2'" x="-3.75" y="36.5" drill="1.3" diameter="2.6"/>
+<pad name="3'" x="-3.75" y="-36.5" drill="1.3" diameter="2.6"/>
+<pad name="3$" x="3.75" y="-32" drill="1.3" diameter="2.6"/>
+<pad name="3$'" x="-3.75" y="-33.5" drill="1.3" diameter="2.6"/>
+<pad name="4" x="4.4" y="-11" drill="1.5" diameter="3"/>
+<pad name="5" x="-4.4" y="6" drill="1.5" diameter="3"/>
+<wire x1="-4" y1="37.5" x2="4" y2="37.5" width="0.127" layer="51"/>
+<wire x1="4" y1="37.5" x2="4" y2="-37.5" width="0.127" layer="51"/>
+<wire x1="4" y1="-37.5" x2="-4" y2="-37.5" width="0.127" layer="51"/>
+<wire x1="-4" y1="-37.5" x2="-4" y2="37.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="30" x2="1.5" y2="30" width="0.127" layer="51"/>
+<wire x1="1.5" y1="30" x2="1.5" y2="-30" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-30" x2="-1.5" y2="-30" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-30" x2="-1.5" y2="30" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="30" x2="1.5" y2="30" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="30" x2="1.5" y2="-30" width="0.1524" layer="21"/>
+<wire x1="1.5" y1="-30" x2="-1.5" y2="-30" width="0.1524" layer="21"/>
+<wire x1="-1.5" y1="-30" x2="-1.5" y2="30" width="0.1524" layer="21"/>
+<wire x1="-4" y1="31.5" x2="-4" y2="8" width="0.1524" layer="21"/>
+<wire x1="-4" y1="3.5" x2="-4" y2="-31.5" width="0.1524" layer="21"/>
+<wire x1="-2.5" y1="-37.5" x2="4" y2="-37.5" width="0.1524" layer="21"/>
+<wire x1="4" y1="-37.5" x2="4" y2="-37" width="0.1524" layer="21"/>
+<wire x1="4" y1="-13.5" x2="4" y2="-30" width="0.1524" layer="21"/>
+<wire x1="4" y1="30" x2="4" y2="-8.5" width="0.1524" layer="21"/>
+<wire x1="-2" y1="37.5" x2="4" y2="37.5" width="0.1524" layer="21"/>
+<wire x1="4" y1="37.5" x2="4" y2="37" width="0.1524" layer="21"/>
+</package>
+<package name="POT_EWVYG">
+<circle x="0" y="0" radius="22" width="0.127" layer="51"/>
+<pad name="1" x="-2" y="-22.15" drill="0.8" diameter="1.5"/>
+<pad name="2" x="0" y="-22.15" drill="0.8" diameter="1.5"/>
+<pad name="3" x="2" y="-22.15" drill="0.8" diameter="1.5"/>
+<pad name="K" x="-4" y="-22.15" drill="0.8" diameter="1.5"/>
+<pad name="A" x="4" y="-22.15" drill="0.8" diameter="1.5"/>
+<hole x="0" y="-16.5" drill="2.6"/>
+<hole x="0" y="16.5" drill="2"/>
+<pad name="4" x="-5.7" y="21.3" drill="2" diameter="4"/>
+<pad name="EPP" x="5.7" y="21.3" drill="2" diameter="4"/>
+<pad name="5" x="-21.75" y="0" drill="2.7" diameter="4.5"/>
+<pad name="6" x="21.75" y="0" drill="2.7" diameter="4.5"/>
+<wire x1="-8.4" y1="20.3" x2="-10.2" y2="19.5" width="0.127" layer="21"/>
+<wire x1="-10.2" y1="19.5" x2="-11.3" y2="18.9" width="0.127" layer="21" curve="9.295941"/>
+<wire x1="-11.3" y1="18.9" x2="-13.7" y2="17.2" width="0.127" layer="21" curve="4.105566"/>
+<wire x1="-13.7" y1="17.2" x2="-15.1" y2="16" width="0.127" layer="21" curve="6.474601"/>
+<wire x1="-15.1" y1="16" x2="-16.1" y2="15" width="0.127" layer="21" curve="2.322821"/>
+<wire x1="-16.1" y1="15" x2="-17.6" y2="13.2" width="0.127" layer="21" curve="8.066036"/>
+<wire x1="-17.6" y1="13.2" x2="-18.6" y2="11.7" width="0.127" layer="21" curve="4.164968"/>
+<wire x1="-18.6" y1="11.7" x2="-19.8" y2="9.7" width="0.127" layer="21" curve="1.287649"/>
+<wire x1="-19.8" y1="9.7" x2="-20.8" y2="7.3" width="0.127" layer="21" curve="15.400135"/>
+<wire x1="-20.8" y1="7.3" x2="-21.4" y2="5.1" width="0.127" layer="21" curve="-0.670643"/>
+<wire x1="-21.4" y1="5.1" x2="-21.8" y2="3.2" width="0.127" layer="21" curve="7.403564"/>
+<wire x1="-3.1" y1="21.8" x2="-0.5" y2="22" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="22" x2="1.9" y2="21.9" width="0.127" layer="21" curve="-13.569273"/>
+<wire x1="1.9" y1="21.9" x2="3.2" y2="21.7" width="0.127" layer="21" curve="0.848816"/>
+<wire x1="8.6" y1="20.3" x2="11.8" y2="18.6" width="0.127" layer="21"/>
+<wire x1="11.8" y1="18.6" x2="13.7" y2="17.2" width="0.127" layer="21" curve="-16.809755"/>
+<wire x1="13.7" y1="17.2" x2="14.7" y2="16.4" width="0.127" layer="21" curve="12.258847"/>
+<wire x1="14.7" y1="16.4" x2="15.3" y2="15.8" width="0.127" layer="21"/>
+<wire x1="15.3" y1="15.8" x2="16.4" y2="14.7" width="0.127" layer="21"/>
+<wire x1="16.4" y1="14.7" x2="17.4" y2="13.5" width="0.127" layer="21"/>
+<wire x1="17.4" y1="13.5" x2="17.9" y2="12.8" width="0.127" layer="21"/>
+<wire x1="17.9" y1="12.8" x2="18.7" y2="11.6" width="0.127" layer="21"/>
+<wire x1="18.7" y1="11.6" x2="19.7" y2="9.8" width="0.127" layer="21"/>
+<wire x1="19.7" y1="9.8" x2="20.4" y2="8.3" width="0.127" layer="21"/>
+<wire x1="20.4" y1="8.3" x2="21.2" y2="5.9" width="0.127" layer="21"/>
+<wire x1="21.2" y1="5.9" x2="21.7" y2="3.6" width="0.127" layer="21"/>
+<wire x1="21.7" y1="3.6" x2="21.8" y2="2.9" width="0.127" layer="21"/>
+<wire x1="21.8" y1="-2.9" x2="21.5" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="21.5" y1="-4.7" x2="21.1" y2="-6.3" width="0.127" layer="21"/>
+<wire x1="21.1" y1="-6.3" x2="20.3" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="20.3" y1="-8.5" x2="18.7" y2="-11.6" width="0.127" layer="21"/>
+<wire x1="18.7" y1="-11.6" x2="17.4" y2="-13.5" width="0.127" layer="21"/>
+<wire x1="17.4" y1="-13.5" x2="16.3" y2="-14.8" width="0.127" layer="21"/>
+<wire x1="16.3" y1="-14.8" x2="14.9" y2="-16.2" width="0.127" layer="21"/>
+<wire x1="14.9" y1="-16.2" x2="12.1" y2="-18.4" width="0.127" layer="21"/>
+<wire x1="12.1" y1="-18.4" x2="10.6" y2="-19.3" width="0.127" layer="21"/>
+<wire x1="10.6" y1="-19.3" x2="8" y2="-20.5" width="0.127" layer="21"/>
+<wire x1="8" y1="-20.5" x2="5.2" y2="-21.4" width="0.127" layer="21"/>
+<wire x1="-21.8" y1="-3" x2="-21.5" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="-21.5" y1="-4.7" x2="-21" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-21" y1="-6.6" x2="-20.1" y2="-8.9" width="0.127" layer="21"/>
+<wire x1="-20.1" y1="-8.9" x2="-19.1" y2="-10.9" width="0.127" layer="21"/>
+<wire x1="-19.1" y1="-10.9" x2="-18.2" y2="-12.3" width="0.127" layer="21"/>
+<wire x1="-18.2" y1="-12.3" x2="-17.1" y2="-13.8" width="0.127" layer="21"/>
+<wire x1="-17.1" y1="-13.8" x2="-15.6" y2="-15.5" width="0.127" layer="21"/>
+<wire x1="-15.6" y1="-15.5" x2="-13.6" y2="-17.3" width="0.127" layer="21"/>
+<wire x1="-13.6" y1="-17.3" x2="-11.9" y2="-18.5" width="0.127" layer="21"/>
+<wire x1="-11.9" y1="-18.5" x2="-9.4" y2="-19.9" width="0.127" layer="21"/>
+<wire x1="-9.4" y1="-19.9" x2="-6.5" y2="-21" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-21" x2="-5" y2="-21.4" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="25" width="0.8" layer="39"/>
+<text x="-4" y="27" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-5.8" y="-28.1" size="2" layer="27" ratio="10">&gt;Value</text>
+</package>
+<package name="POT_EWVYK">
+<pad name="1" x="-2" y="-19.7" drill="0.8" diameter="1.5"/>
+<pad name="2" x="0" y="-19.7" drill="0.8" diameter="1.5"/>
+<pad name="3" x="2" y="-19.7" drill="0.8" diameter="1.5"/>
+<hole x="0" y="-14" drill="2.6"/>
+<hole x="0" y="14" drill="2"/>
+<pad name="4" x="5" y="18.85" drill="2" diameter="4"/>
+<pad name="EPP" x="-5" y="18.85" drill="2" diameter="4"/>
+<pad name="5" x="-19.2" y="0" drill="2.7" diameter="4.5"/>
+<pad name="6" x="19.2" y="0" drill="2.7" diameter="4.5"/>
+<text x="-4" y="22.05" size="2" layer="25" ratio="10">&gt;Name</text>
+<text x="-4.7" y="-23.4" size="2" layer="27" ratio="10">&gt;Value</text>
+<circle x="0" y="0" radius="19.5" width="0.127" layer="51"/>
+<wire x1="-7" y1="18.2" x2="-8.8" y2="17.4" width="0.127" layer="21"/>
+<wire x1="-8.8" y1="17.4" x2="-10.65" y2="16.35" width="0.127" layer="21"/>
+<wire x1="-10.65" y1="16.35" x2="-12.45" y2="15" width="0.127" layer="21"/>
+<wire x1="-12.45" y1="15" x2="-14" y2="13.6" width="0.127" layer="21"/>
+<wire x1="-14" y1="13.6" x2="-15.25" y2="12.15" width="0.127" layer="21"/>
+<wire x1="-15.25" y1="12.15" x2="-16.3" y2="10.7" width="0.127" layer="21"/>
+<wire x1="-16.3" y1="10.7" x2="-17.25" y2="9.1" width="0.127" layer="21"/>
+<wire x1="-17.25" y1="9.1" x2="-18.15" y2="7.15" width="0.127" layer="21"/>
+<wire x1="-18.15" y1="7.15" x2="-18.65" y2="5.7" width="0.127" layer="21"/>
+<wire x1="-18.65" y1="5.7" x2="-18.95" y2="4.65" width="0.127" layer="21"/>
+<wire x1="-18.95" y1="4.65" x2="-19.25" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-19.2" y1="-3.35" x2="-18.8" y2="-5.25" width="0.127" layer="21"/>
+<wire x1="-18.8" y1="-5.25" x2="-18.65" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="-18.65" y1="-5.6" x2="-18.2" y2="-7.05" width="0.127" layer="21"/>
+<wire x1="-18.2" y1="-7.05" x2="-17.25" y2="-9.1" width="0.127" layer="21"/>
+<wire x1="-17.25" y1="-9.1" x2="-16.05" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="-16.05" y1="-11.05" x2="-14.9" y2="-12.6" width="0.127" layer="21"/>
+<wire x1="-14.9" y1="-12.6" x2="-13.4" y2="-14.2" width="0.127" layer="21"/>
+<wire x1="-13.4" y1="-14.2" x2="-11.5" y2="-15.8" width="0.127" layer="21"/>
+<wire x1="-11.5" y1="-15.8" x2="-9" y2="-17.3" width="0.127" layer="21"/>
+<wire x1="-9" y1="-17.3" x2="-6.9" y2="-18.25" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-18.25" x2="-5.7" y2="-18.65" width="0.127" layer="21"/>
+<wire x1="-5.7" y1="-18.65" x2="-3.9" y2="-19.1" width="0.127" layer="21"/>
+<wire x1="3.95" y1="-19.1" x2="6.2" y2="-18.5" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-18.5" x2="8.6" y2="-17.55" width="0.127" layer="21"/>
+<wire x1="8.6" y1="-17.55" x2="10.75" y2="-16.25" width="0.127" layer="21"/>
+<wire x1="10.75" y1="-16.25" x2="13.05" y2="-14.5" width="0.127" layer="21"/>
+<wire x1="13.05" y1="-14.5" x2="15.05" y2="-12.45" width="0.127" layer="21"/>
+<wire x1="15.05" y1="-12.45" x2="16.3" y2="-10.8" width="0.127" layer="21"/>
+<wire x1="16.3" y1="-10.8" x2="17.55" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="17.55" y1="-8.5" x2="18.35" y2="-6.7" width="0.127" layer="21"/>
+<wire x1="18.35" y1="-6.7" x2="19" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="19" y1="-4.5" x2="19.2" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="19.2" y1="3.5" x2="19" y2="4.4" width="0.127" layer="21"/>
+<wire x1="19" y1="4.4" x2="18.5" y2="6.2" width="0.127" layer="21"/>
+<wire x1="18.5" y1="6.2" x2="17.8" y2="7.95" width="0.127" layer="21"/>
+<wire x1="17.8" y1="7.95" x2="17.1" y2="9.4" width="0.127" layer="21"/>
+<wire x1="17.1" y1="9.4" x2="16.45" y2="10.5" width="0.127" layer="21"/>
+<wire x1="16.45" y1="10.5" x2="15.55" y2="11.8" width="0.127" layer="21"/>
+<wire x1="15.55" y1="11.8" x2="13.95" y2="13.6" width="0.127" layer="21"/>
+<wire x1="13.95" y1="13.6" x2="12.85" y2="14.65" width="0.127" layer="21"/>
+<wire x1="12.85" y1="14.65" x2="11.35" y2="15.85" width="0.127" layer="21"/>
+<wire x1="11.35" y1="15.85" x2="9.1" y2="17.25" width="0.127" layer="21"/>
+<wire x1="9.1" y1="17.25" x2="7.85" y2="17.9" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="19.45" x2="-0.05" y2="19.5" width="0.2" layer="21"/>
+<wire x1="-0.05" y1="19.5" x2="2.3" y2="19.4" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="POT">
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="10.16" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="3" x="20.32" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="9.525" y1="3.81" x2="10.16" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="10.795" y1="3.81" x2="10.16" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="9.525" y1="3.81" x2="10.16" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="10.16" y1="3.81" x2="10.795" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="10.16" y1="3.81" x2="10.16" y2="5.08" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="0" x2="6.985" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="9.525" y1="1.27" x2="10.795" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="10.795" y1="-1.27" x2="12.065" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="8.255" y1="-1.27" x2="9.525" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="13.335" y1="-1.27" x2="13.97" y2="0" width="0.2032" layer="94"/>
+<wire x1="13.97" y1="0" x2="17.78" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="6.35" y2="0" width="0.2032" layer="94"/>
+<wire x1="12.065" y1="1.27" x2="13.335" y2="-1.27" width="0.2032" layer="94"/>
+<text x="7.62" y="12.7" size="2.032" layer="95">&gt;Name</text>
+<text x="7.62" y="-5.08" size="2.032" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="POT_ROTARY">
+<pin name="1" x="-5.08" y="-10.16" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="-12.7" y="0" visible="off" length="short" direction="pas"/>
+<pin name="3" x="-5.08" y="10.16" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="-8.89" y1="-0.635" x2="-6.985" y2="0" width="0.2032" layer="94"/>
+<wire x1="-8.89" y1="0.635" x2="-6.985" y2="0" width="0.2032" layer="94"/>
+<wire x1="-8.89" y1="-0.635" x2="-8.89" y2="0" width="0.2032" layer="94"/>
+<wire x1="-8.89" y1="0" x2="-8.89" y2="0.635" width="0.2032" layer="94"/>
+<wire x1="-8.89" y1="0" x2="-10.16" y2="0" width="0.2032" layer="94"/>
+<wire x1="-5.08" y1="-3.81" x2="-6.35" y2="-3.175" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="-0.635" x2="-3.81" y2="0.635" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="0.635" x2="-6.35" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="-1.905" x2="-6.35" y2="-0.635" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="-3.175" x2="-3.81" y2="-1.905" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="3.175" x2="-5.08" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="7.62" width="0.2032" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="-3.81" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="1.905" x2="-3.81" y2="3.175" width="0.2032" layer="94"/>
+<text x="-5.08" y="15.24" size="2.032" layer="95">&gt;Name</text>
+<text x="-5.08" y="-20.32" size="2.032" layer="96">&gt;Value</text>
+<pin name="3'" x="5.08" y="10.16" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2'" x="12.7" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1'" x="5.08" y="-10.16" visible="off" length="short" direction="pas" rot="R90"/>
+<wire x1="8.89" y1="0.635" x2="6.985" y2="0" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="-0.635" x2="6.985" y2="0" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="0" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="0" x2="8.89" y2="-0.635" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="0" x2="10.16" y2="0" width="0.2032" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="6.35" y2="3.175" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="94"/>
+<wire x1="3.81" y1="-0.635" x2="6.35" y2="-1.905" width="0.2032" layer="94"/>
+<wire x1="3.81" y1="1.905" x2="6.35" y2="0.635" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="3.175" x2="3.81" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="3.81" y1="-3.175" x2="5.08" y2="-3.81" width="0.2032" layer="94"/>
+<wire x1="5.08" y1="-3.81" x2="5.08" y2="-7.62" width="0.2032" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="-1.905" x2="3.81" y2="-3.175" width="0.2032" layer="94"/>
+</symbol>
+<symbol name="ROTARY_POTENTIOMETERS">
+<pin name="#1" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="#3" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+<pin name="#A" x="17.78" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="#2" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="#K" x="17.78" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="EPP" x="17.78" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
+<text x="-4.6482" y="10.1854" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.8928" y="-13.589" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="POT_EWVYKX">
+<pin name="#1" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="#3" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+<pin name="#2" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="EPP" x="17.78" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
+<text x="-4.6482" y="10.1854" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.8928" y="-13.589" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="EVUF" prefix="R">
+<description>Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-F2M_F3M" package="POT-EVUF2M">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2MFL3B14">
+<attribute name="MPN" value="EVUF2MFL3B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282487  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2677" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="2MFL3B24">
+<attribute name="MPN" value="EVUF2MFL3B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2284148  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2678" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="20KOHM" constant="no"/>
+</technology>
+<technology name="2MFL3B53">
+<attribute name="MPN" value="EVUF2MFL3B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2284149  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2679" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="2MFL3B54">
+<attribute name="MPN" value="EVUF2MFL3B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2284150  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2680" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+<technology name="2MFL3D14">
+<attribute name="MPN" value="EVUF2MFL3D14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284151  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2681" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="2MFL3D24">
+<attribute name="MPN" value="EVUF2MFL3D24" constant="no"/>
+<attribute name="OC_FARNELL" value="2284152  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2682" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM" constant="no"/>
+</technology>
+<technology name="2MFL3D54">
+<attribute name="MPN" value="EVUF2MFL3D54" constant="no"/>
+<attribute name="OC_FARNELL" value="2284153  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2684" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+<technology name="3MFL3B14">
+<attribute name="MPN" value="EVUF3MFL3B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284162  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2708" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="3MFL3B24">
+<attribute name="MPN" value="EVUF3MFL3B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2284163  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2709" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="20KOHM" constant="no"/>
+</technology>
+<technology name="3MFL3B53">
+<attribute name="MPN" value="EVUF3MFL3B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2284164  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2710" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="3MFL3B54">
+<attribute name="MPN" value="EVUF3MFL3B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2284165  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2711" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+<technology name="3MFL3D14">
+<attribute name="MPN" value="EVUF3MFL3D14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284166  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2712" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-F2A_F3A" package="POT-EVUF2A">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2AF30B14">
+<attribute name="MPN" value="EVUF2AF30B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282474  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2635" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="2AF30B24">
+<attribute name="MPN" value="EVUF2AF30B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2282475  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2636" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="20KOHM" constant="no"/>
+</technology>
+<technology name="2AF30B53">
+<attribute name="MPN" value="EVUF2AF30B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2282476  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2637" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="2AF30B54">
+<attribute name="MPN" value="EVUF2AF30B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2282477  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2638" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+<technology name="2AF30D14">
+<attribute name="MPN" value="EVUF2AF30D14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282478  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2639" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="2AF30D53">
+<attribute name="MPN" value="EVUF2AF30D53" constant="no"/>
+<attribute name="OC_FARNELL" value="2282479  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2641" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="3AF30B14">
+<attribute name="MPN" value="EVUF3AF30B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284154  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2689" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="3AF30B24">
+<attribute name="MPN" value="EVUF3AF30B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2284155  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2690" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="20KOHM" constant="no"/>
+</technology>
+<technology name="3AF30B53">
+<attribute name="MPN" value="EVUF3AF30B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2284156  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2691" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="3AF30B54">
+<attribute name="MPN" value="EVUF3AF30B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2284158  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2692" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-F2L_F3L" package="POT-EVUF2L">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2LFL3B14">
+<attribute name="MPN" value="EVUF2LFL3B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282480  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2662" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="2LFL3B24">
+<attribute name="MPN" value="EVUF2LFL3B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2282481  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2664" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="20KOHM" constant="no"/>
+</technology>
+<technology name="2LFL3B53">
+<attribute name="MPN" value="EVUF2LFL3B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2282482  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2665" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="2LFL3B54">
+<attribute name="MPN" value="EVUF2LFL3B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2282484  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2666" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM" constant="no"/>
+</technology>
+<technology name="2LFL3D14">
+<attribute name="MPN" value="EVUF2LFL3D14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282485  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2667" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="2LFL3D54">
+<attribute name="MPN" value="EVUF2LFL3D54" constant="no"/>
+<attribute name="OC_FARNELL" value="2282486  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2669" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+<technology name="3LFL3B14">
+<attribute name="MPN" value="EVUF3LFL3B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284159  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2698" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM" constant="no"/>
+</technology>
+<technology name="3LFL3B53">
+<attribute name="MPN" value="EVUF3LFL3B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2284160  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2700" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="5KOHM" constant="no"/>
+</technology>
+<technology name="3LFL3B54">
+<attribute name="MPN" value="EVUF3LFL3B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2284161  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2701" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="POWERRATING" value="50mW" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="50KOHM" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EVM" prefix="R">
+<description>Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1D" package="POT_EVM1D">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="1DSX30B12">
+<attribute name="MPN" value="EVM1DSX30B12" constant="no"/>
+<attribute name="OC_FARNELL" value="1849809  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0097" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100OHM " constant="no"/>
+</technology>
+<technology name="1DSX30B13">
+<attribute name="MPN" value="EVM1DSX30B13" constant="no"/>
+<attribute name="OC_FARNELL" value="1849812  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0098" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B14">
+<attribute name="MPN" value="EVM1DSX30B14" constant="no"/>
+<attribute name="OC_FARNELL" value="1849816  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0099" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B15">
+<attribute name="MPN" value="EVM1DSX30B15" constant="no"/>
+<attribute name="OC_FARNELL" value="1849819 " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0100 " constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B16">
+<attribute name="MPN" value="EVM1DSX30B16" constant="no"/>
+<attribute name="OC_FARNELL" value="1849822  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0101" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1MOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B22">
+<attribute name="MPN" value="EVM1DSX30B22" constant="no"/>
+<attribute name="OC_FARNELL" value="1849810  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0102" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200OHM " constant="no"/>
+</technology>
+<technology name="1DSX30B23">
+<attribute name="MPN" value="EVM1DSX30B23" constant="no"/>
+<attribute name="OC_FARNELL" value="1849813  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0103" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B24">
+<attribute name="MPN" value="EVM1DSX30B24" constant="no"/>
+<attribute name="OC_FARNELL" value="1849817  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0104" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B25">
+<attribute name="MPN" value="EVM1DSX30B25" constant="no"/>
+<attribute name="OC_FARNELL" value="1849820  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0105" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B52">
+<attribute name="MPN" value="EVM1DSX30B52" constant="no"/>
+<attribute name="OC_FARNELL" value="1849811  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0106" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500OHM " constant="no"/>
+</technology>
+<technology name="1DSX30B53">
+<attribute name="MPN" value="EVM1DSX30B53" constant="no"/>
+<attribute name="OC_FARNELL" value="1849814  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0107" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B54">
+<attribute name="MPN" value="EVM1DSX30B54" constant="no"/>
+<attribute name="OC_FARNELL" value="1849818  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0108" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="1DSX30B55">
+<attribute name="MPN" value="EVM1DSX30B55" constant="no"/>
+<attribute name="OC_FARNELL" value="1849821  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0109" constant="no"/>
+<attribute name="PACKAGE" value="EVM1D" constant="no"/>
+<attribute name="POWERRATING" value=" 0.2W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-2N" package="POT_EVM2N">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2NSX80B12">
+<attribute name="MPN" value="EVM2NSX80B12" constant="no"/>
+<attribute name="OC_FARNELL" value="1849752  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5154" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100OHM " constant="no"/>
+</technology>
+<technology name="2NSX80B13">
+<attribute name="MPN" value="EVM2NSX80B13" constant="no"/>
+<attribute name="OC_FARNELL" value="1849755  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5155" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B15">
+<attribute name="MPN" value="EVM2NSX80B15" constant="no"/>
+<attribute name="OC_FARNELL" value="1849762  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5157" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B16">
+<attribute name="MPN" value="EVM2NSX80B16" constant="no"/>
+<attribute name="OC_FARNELL" value="1849765  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5158" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1MOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B22">
+<attribute name="MPN" value="EVM2NSX80B22" constant="no"/>
+<attribute name="OC_FARNELL" value="1849753  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5159" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200OHM " constant="no"/>
+</technology>
+<technology name="2NSX80B23">
+<attribute name="MPN" value="EVM2NSX80B23" constant="no"/>
+<attribute name="OC_FARNELL" value="1849756  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5160" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B24">
+<attribute name="MPN" value="EVM2NSX80B24" constant="no"/>
+<attribute name="OC_FARNELL" value="1849759  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5161" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B25">
+<attribute name="MPN" value="EVM2NSX80B25" constant="no"/>
+<attribute name="OC_FARNELL" value="1849763  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5162" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B52">
+<attribute name="MPN" value="EVM2NSX80B52" constant="no"/>
+<attribute name="OC_FARNELL" value="1849754  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5163" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500OHM " constant="no"/>
+</technology>
+<technology name="2NSX80B53">
+<attribute name="MPN" value="EVM2NSX80B53" constant="no"/>
+<attribute name="OC_FARNELL" value="1849757  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5164" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B54">
+<attribute name="MPN" value="EVM2NSX80B54" constant="no"/>
+<attribute name="OC_FARNELL" value="1849760  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5165" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="2NSX80B55">
+<attribute name="MPN" value="EVM2NSX80B55" constant="no"/>
+<attribute name="OC_FARNELL" value="1849764  " constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="PACKAGE" value="EVM2N" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-2W" package="POT_EVM2W">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2WSX80B12">
+<attribute name="MPN" value="EVM2WSX80B12" constant="no"/>
+<attribute name="OC_FARNELL" value="1849766  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5167" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100OHM " constant="no"/>
+</technology>
+<technology name="2WSX80B14">
+<attribute name="MPN" value="EVM2WSX80B14" constant="no"/>
+<attribute name="OC_FARNELL" value="1849772  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5169" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B15">
+<attribute name="MPN" value="EVM2WSX80B15" constant="no"/>
+<attribute name="OC_FARNELL" value="1849776  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5170" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B16">
+<attribute name="MPN" value="EVM2WSX80B16" constant="no"/>
+<attribute name="OC_FARNELL" value="1849779  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5171" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1MOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B22">
+<attribute name="MPN" value="EVM2WSX80B22" constant="no"/>
+<attribute name="OC_FARNELL" value="1849767  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5172" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200OHM " constant="no"/>
+</technology>
+<technology name="2WSX80B23">
+<attribute name="MPN" value="EVM2WSX80B23" constant="no"/>
+<attribute name="OC_FARNELL" value="1849770  " constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B24">
+<attribute name="MPN" value="EVM2WSX80B24" constant="no"/>
+<attribute name="OC_FARNELL" value="1849774  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5174" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B25">
+<attribute name="MPN" value="EVM2WSX80B25" constant="no"/>
+<attribute name="OC_FARNELL" value="1849777  " constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B52">
+<attribute name="MPN" value="EVM2WSX80B52" constant="no"/>
+<attribute name="OC_FARNELL" value="1849768  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5176" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500OHM " constant="no"/>
+</technology>
+<technology name="2WSX80B53">
+<attribute name="MPN" value="EVM2WSX80B53" constant="no"/>
+<attribute name="OC_FARNELL" value="1849771  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5177" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B54">
+<attribute name="MPN" value="EVM2WSX80B54" constant="no"/>
+<attribute name="OC_FARNELL" value="1849775  " constant="no"/>
+<attribute name="OC_NEWARK" value="17T5178" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="2WSX80B55">
+<attribute name="MPN" value="EVM2WSX80B55" constant="no"/>
+<attribute name="OC_FARNELL" value="1849778  " constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="PACKAGE" value="EVM2W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-3W" package="POT_EVM3W">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="3WSX80B12">
+<attribute name="MPN" value="EVM3WSX80B12" constant="no"/>
+<attribute name="OC_FARNELL" value="1849780  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0110" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100OHM " constant="no"/>
+</technology>
+<technology name="3WSX80B13">
+<attribute name="MPN" value="EVM3WSX80B13" constant="no"/>
+<attribute name="OC_FARNELL" value="1849783  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0111" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B14">
+<attribute name="MPN" value="EVM3WSX80B14" constant="no"/>
+<attribute name="OC_FARNELL" value="1849787  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0112" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B15">
+<attribute name="MPN" value="EVM3WSX80B15" constant="no"/>
+<attribute name="OC_FARNELL" value="1849790  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0113" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B16">
+<attribute name="MPN" value="EVM3WSX80B16" constant="no"/>
+<attribute name="OC_FARNELL" value="1849793  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0114" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1MOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B22">
+<attribute name="MPN" value="EVM3WSX80B22" constant="no"/>
+<attribute name="OC_FARNELL" value="1849781  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0115" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200OHM " constant="no"/>
+</technology>
+<technology name="3WSX80B23">
+<attribute name="MPN" value="EVM3WSX80B23" constant="no"/>
+<attribute name="OC_FARNELL" value="1849784  " constant="no"/>
+<attribute name="OC_NEWARK" value="93T1522" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B24">
+<attribute name="MPN" value="EVM3WSX80B24" constant="no"/>
+<attribute name="OC_FARNELL" value="1849788  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0116" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B25">
+<attribute name="MPN" value="EVM3WSX80B25" constant="no"/>
+<attribute name="OC_FARNELL" value="1849791  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0117" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B52">
+<attribute name="MPN" value="EVM3WSX80B52" constant="no"/>
+<attribute name="OC_FARNELL" value="1849782  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0118" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500OHM " constant="no"/>
+</technology>
+<technology name="3WSX80B53">
+<attribute name="MPN" value="EVM3WSX80B53" constant="no"/>
+<attribute name="OC_FARNELL" value="1849786  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0119" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B54">
+<attribute name="MPN" value="EVM3WSX80B54" constant="no"/>
+<attribute name="OC_FARNELL" value="1849789  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0120" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="3WSX80B55">
+<attribute name="MPN" value="EVM3WSX80B55" constant="no"/>
+<attribute name="OC_FARNELL" value="1849792  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0121" constant="no"/>
+<attribute name="PACKAGE" value="EVM3W" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B12">
+<attribute name="MPN" value="EVM3YSX50B12" constant="no"/>
+<attribute name="OC_FARNELL" value="1849794  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0122" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y" constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100OHM " constant="no"/>
+</technology>
+<technology name="3YSX50B13">
+<attribute name="MPN" value="EVM3YSX50B13" constant="no"/>
+<attribute name="OC_FARNELL" value="1849798  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0123" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B14">
+<attribute name="MPN" value="EVM3YSX50B14" constant="no"/>
+<attribute name="OC_FARNELL" value="1849801  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0124" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B15">
+<attribute name="MPN" value="EVM3YSX50B15" constant="no"/>
+<attribute name="OC_FARNELL" value="1849805  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0125" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B16">
+<attribute name="MPN" value="EVM3YSX50B16" constant="no"/>
+<attribute name="OC_FARNELL" value="1849808  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0126" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1MOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B22">
+<attribute name="MPN" value="EVM3YSX50B22" constant="no"/>
+<attribute name="OC_FARNELL" value="1849795  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0127" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200OHM " constant="no"/>
+</technology>
+<technology name="3YSX50B23">
+<attribute name="MPN" value="EVM3YSX50B23" constant="no"/>
+<attribute name="OC_FARNELL" value="1849799  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0128" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B24">
+<attribute name="MPN" value="EVM3YSX50B24" constant="no"/>
+<attribute name="OC_FARNELL" value="1849802  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0129" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B25">
+<attribute name="MPN" value="EVM3YSX50B25" constant="no"/>
+<attribute name="OC_FARNELL" value="1849806  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0130" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B52">
+<attribute name="MPN" value="EVM3YSX50B52" constant="no"/>
+<attribute name="OC_FARNELL" value="1849796  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0131" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500OHM " constant="no"/>
+</technology>
+<technology name="3YSX50B53">
+<attribute name="MPN" value="EVM3YSX50B53" constant="no"/>
+<attribute name="OC_FARNELL" value="1849800  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0132" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B54">
+<attribute name="MPN" value="EVM3YSX50B54" constant="no"/>
+<attribute name="OC_FARNELL" value="1849804  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0133" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="3YSX50B55">
+<attribute name="MPN" value="EVM3YSX50B55" constant="no"/>
+<attribute name="OC_FARNELL" value="1849807  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0134" constant="no"/>
+<attribute name="PACKAGE" value="EVM3Y " constant="no"/>
+<attribute name="POWERRATING" value=" 0.15W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-AA" package="POT_EVMAAS">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="AASA00B12">
+<attribute name="MPN" value="EVMAASA00B12" constant="no"/>
+<attribute name="OC_FARNELL" value="1849823  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0084" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100OHM " constant="no"/>
+</technology>
+<technology name="AASA00B13">
+<attribute name="MPN" value="EVMAASA00B13" constant="no"/>
+<attribute name="OC_FARNELL" value="1849826  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0085" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B14">
+<attribute name="MPN" value="EVMAASA00B14" constant="no"/>
+<attribute name="OC_FARNELL" value="1849830  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0086" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B15">
+<attribute name="MPN" value="EVMAASA00B15" constant="no"/>
+<attribute name="OC_FARNELL" value="1849833  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0087" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B16">
+<attribute name="MPN" value="EVMAASA00B16" constant="no"/>
+<attribute name="OC_FARNELL" value="1849836  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0088" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 1MOHM " constant="no"/>
+</technology>
+<technology name="AASA00B22">
+<attribute name="MPN" value="EVMAASA00B22" constant="no"/>
+<attribute name="OC_FARNELL" value="1849824  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0089" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200OHM " constant="no"/>
+</technology>
+<technology name="AASA00B23">
+<attribute name="MPN" value="EVMAASA00B23" constant="no"/>
+<attribute name="OC_FARNELL" value="1849828  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0090" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B24">
+<attribute name="MPN" value="EVMAASA00B24" constant="no"/>
+<attribute name="OC_FARNELL" value="1849831  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0091" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B25">
+<attribute name="MPN" value="EVMAASA00B25" constant="no"/>
+<attribute name="OC_FARNELL" value="1849834  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0092" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B52">
+<attribute name="MPN" value="EVMAASA00B52" constant="no"/>
+<attribute name="OC_FARNELL" value="1849825  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0093" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500OHM " constant="no"/>
+</technology>
+<technology name="AASA00B53">
+<attribute name="MPN" value="EVMAASA00B53" constant="no"/>
+<attribute name="OC_FARNELL" value="1849829  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0094" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B54">
+<attribute name="MPN" value="EVMAASA00B54" constant="no"/>
+<attribute name="OC_FARNELL" value="1849832  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0095" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="AASA00B55">
+<attribute name="MPN" value="EVMAASA00B55" constant="no"/>
+<attribute name="OC_FARNELL" value="1849835  " constant="no"/>
+<attribute name="OC_NEWARK" value="48W0096" constant="no"/>
+<attribute name="PACKAGE" value="EVMAA" constant="no"/>
+<attribute name="POWERRATING" value=" 0.3W " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="TOLERANCE" value="±25 %" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EVND" prefix="R">
+<description>Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-D2A" package="POT-EVND2A">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2AA03B13">
+<attribute name="MPN" value="EVND2AA03B13" constant="no"/>
+<attribute name="OC_FARNELL" value="2281357  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2427" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="2AA03B14">
+<attribute name="MPN" value="EVND2AA03B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2281358  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2428" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="2AA03B15">
+<attribute name="MPN" value="EVND2AA03B15" constant="no"/>
+<attribute name="OC_FARNELL" value="2281359  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2429" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="2AA03B24">
+<attribute name="MPN" value="EVND2AA03B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2281360  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2431" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="2AA03B53">
+<attribute name="MPN" value="EVND2AA03B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2281361  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2433" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="2AA03B54">
+<attribute name="MPN" value="EVND2AA03B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2281362  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2434" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-D8A" package="POT-EVND8A">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="8AA03B13">
+<attribute name="MPN" value="EVND8AA03B13" constant="no"/>
+<attribute name="OC_FARNELL" value="2281364  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2436" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B14">
+<attribute name="MPN" value="EVND8AA03B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2281365  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2437" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B15">
+<attribute name="MPN" value="EVND8AA03B15" constant="no"/>
+<attribute name="OC_FARNELL" value="2281366  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2438" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B23">
+<attribute name="MPN" value="EVND8AA03B23" constant="no"/>
+<attribute name="OC_FARNELL" value="2281367  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2439" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B24">
+<attribute name="MPN" value="EVND8AA03B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2284573  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2440" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B25">
+<attribute name="MPN" value="EVND8AA03B25" constant="no"/>
+<attribute name="OC_FARNELL" value="2284574  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2441" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 200KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B53">
+<attribute name="MPN" value="EVND8AA03B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2284575  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2442" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B54">
+<attribute name="MPN" value="EVND8AA03B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2284576  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2443" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="8AA03B55">
+<attribute name="MPN" value="EVND8AA03B55" constant="no"/>
+<attribute name="OC_FARNELL" value="2284577  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2444" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-DCA" package="POT-EVNDCA">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="CAA03B14">
+<attribute name="MPN" value="EVNDCAA03B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284572  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2407" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-DJA" package="POT-EVNDJA">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="JAA03B13">
+<attribute name="MPN" value="EVNDJAA03B13" constant="no"/>
+<attribute name="OC_FARNELL" value="2281348  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2416" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 1KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B14">
+<attribute name="MPN" value="EVNDJAA03B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2281349  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2417" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B15">
+<attribute name="MPN" value="EVNDJAA03B15" constant="no"/>
+<attribute name="OC_FARNELL" value="2281350  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2418" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 100KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B23">
+<attribute name="MPN" value="EVNDJAA03B23" constant="no"/>
+<attribute name="OC_FARNELL" value="2281352  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2420" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 2KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B24">
+<attribute name="MPN" value="EVNDJAA03B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2281353  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2421" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B53">
+<attribute name="MPN" value="EVNDJAA03B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2281354  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2424" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B54">
+<attribute name="MPN" value="EVNDJAA03B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2281355  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2425" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="JAA03B55">
+<attribute name="MPN" value="EVNDJAA03B55" constant="no"/>
+<attribute name="OC_FARNELL" value="2281356  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2426" constant="no"/>
+<attribute name="PACKAGE" value="TH" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 500KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EVUE" prefix="R">
+<description>Trimmer Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-E2A_E3A" package="POT-EVUE2A">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2AF25B14">
+<attribute name="MPN" value="EVUE2AF25B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2281994  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2575" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="2AF25B53">
+<attribute name="MPN" value="EVUE2AF25B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2281996  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2578" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="2AF25B54">
+<attribute name="MPN" value="EVUE2AF25B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2281997  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2579" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="3AF25B14">
+<attribute name="MPN" value="EVUE3AF25B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282470  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2602" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-E2J_E3J" package="POT-EVUE2J">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2JFK4B14">
+<attribute name="MPN" value="EVUE2JFK4B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2281998  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2587" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="2JFK4B53">
+<attribute name="MPN" value="EVUE2JFK4B53" constant="no"/>
+<attribute name="OC_FARNELL" value="2281999  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2589" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 5KOHM " constant="no"/>
+</technology>
+<technology name="2JFK4B54">
+<attribute name="MPN" value="EVUE2JFK4B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2282000  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2590" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="2JFK4D54">
+<attribute name="MPN" value="EVUE2JFK4D54" constant="no"/>
+<attribute name="OC_FARNELL" value="2282001  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2592" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+<technology name="3JFK4B14">
+<attribute name="MPN" value="EVUE3JFK4B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282472  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2610" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+<technology name="3JFK4B54">
+<attribute name="MPN" value="EVUE3JFK4B54" constant="no"/>
+<attribute name="OC_FARNELL" value="2282473  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2612" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 50KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-E2K" package="POT-EVUE2K">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="2KFK4B24">
+<attribute name="MPN" value="EVUE2KFK4B24" constant="no"/>
+<attribute name="OC_FARNELL" value="2282468  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2595" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 20KOHM " constant="no"/>
+</technology>
+<technology name="2KFK4D14">
+<attribute name="MPN" value="EVUE2KFK4D14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282469  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2597" constant="no"/>
+<attribute name="PACKAGE" value="TH-R/A" constant="no"/>
+<attribute name="POWERRATING" value=" 50mW " constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value=" 10KOHM " constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EVBJQ" prefix="R">
+<description>Thin type Faders for Audio Mixers Slide Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT_ROTARY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POT_EVBJQ">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="1'" pad="1'"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="2'" pad="2'"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="3'" pad="3'"/>
+</connects>
+<technologies>
+<technology name="KR15A14">
+<attribute name="MPN" value="EVBJQKR15A14" constant="no"/>
+<attribute name="OC_FARNELL" value="8795975  " constant="no"/>
+<attribute name="OC_NEWARK" value="18K6214" constant="no"/>
+<attribute name="PACKAGE" value="TH-POTENTIOMETER, SLIDE" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EVJ" prefix="R">
+<description>12 mm Square Two-in-One Rotary Potentiometers (Dual Type)</description>
+<gates>
+<gate name="A" symbol="POT_ROTARY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-JC2" package="POT_EVJC20">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="1'" pad="1'"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="2'" pad="2'"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="3'" pad="3'"/>
+</connects>
+<technologies>
+<technology name="C20F02A14">
+<attribute name="MPN" value="EVJC20F02A14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284569  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2256" constant="no"/>
+<attribute name="PACKAGE" value="TH-POT" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="500KOHM, 50mW" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-JY9" package="POT_EVJY91">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="1'" pad="1'"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="2'" pad="2'"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="3'" pad="3'"/>
+</connects>
+<technologies>
+<technology name="Y91F03B14">
+<attribute name="MPN" value="EVJY91F03B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2284570  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2276" constant="no"/>
+<attribute name="PACKAGE" value="TH-POT" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="500KOHM, 50mW" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EWA" prefix="R">
+<description>Standard Faders for Audio Mixers Slide Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-P1" package="POT_EWAP1">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3 3$"/>
+</connects>
+<technologies>
+<technology name="P12C15B14">
+<attribute name="MPN" value="EWAP12C15B14" constant="no"/>
+<attribute name="OC_FARNELL" value="8796220  " constant="no"/>
+<attribute name="OC_NEWARK" value="18K6222" constant="no"/>
+<attribute name="PACKAGE" value="TH-POTENTIOMETER-SLIDE" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-Q1" package="POT_EWAQ1">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3 3$"/>
+</connects>
+<technologies>
+<technology name="Q12C15B14">
+<attribute name="MPN" value="EWAQ12C15B14" constant="no"/>
+<attribute name="OC_FARNELL" value="8796173  " constant="no"/>
+<attribute name="OC_NEWARK" value="Unknown" constant="no"/>
+<attribute name="PACKAGE" value="TH-POTENTIOMETER-SLIDE" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EWV" prefix="R">
+<description>44/25 mm Center Space Rotary Potentiometers</description>
+<gates>
+<gate name="A" symbol="ROTARY_POTENTIOMETERS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POT_EWVYG">
+<connects>
+<connect gate="A" pin="#1" pad="1"/>
+<connect gate="A" pin="#2" pad="2"/>
+<connect gate="A" pin="#3" pad="3"/>
+<connect gate="A" pin="#A" pad="A"/>
+<connect gate="A" pin="#K" pad="K"/>
+<connect gate="A" pin="EPP" pad="EPP"/>
+</connects>
+<technologies>
+<technology name="YG8U03B14">
+<attribute name="MPN" value="EWVYG8U03B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282489  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2739" constant="no"/>
+<attribute name="PACKAGE" value="TH-Rotary Potentiometer" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM, 100mW" constant="no"/>
+</technology>
+<technology name="YG9U04B14">
+<attribute name="MPN" value="EWVYG9U04B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282490  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2740" constant="no"/>
+<attribute name="PACKAGE" value="TH-Rotary Potentiometer" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM, 100mW" constant="no"/>
+</technology>
+<technology name="YJXL27B14">
+<attribute name="MPN" value="EWVYJXL27B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282491  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2741" constant="no"/>
+<attribute name="PACKAGE" value="TH-Rotary Potentiometer" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM, 100mW" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EWVYK" prefix="R">
+<description>39/20 mm Center Space Rotary Potentiometers</description>
+<gates>
+<gate name="A" symbol="POT_EWVYKX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POT_EWVYK">
+<connects>
+<connect gate="A" pin="#1" pad="1"/>
+<connect gate="A" pin="#2" pad="2"/>
+<connect gate="A" pin="#3" pad="3"/>
+<connect gate="A" pin="EPP" pad="EPP"/>
+</connects>
+<technologies>
+<technology name="XL16B14">
+<attribute name="MPN" value="EWVYKXL16B14" constant="no"/>
+<attribute name="OC_FARNELL" value="2282492  " constant="no"/>
+<attribute name="OC_NEWARK" value="52W2742" constant="no"/>
+<attribute name="PACKAGE" value="TH-POT" constant="no"/>
+<attribute name="SUPPLIER" value="PANASONIC" constant="no"/>
+<attribute name="VALUE" value="10KOHM, 100mW" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

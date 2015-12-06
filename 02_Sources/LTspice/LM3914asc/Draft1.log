@@ -1,0 +1,4 @@
+Circuit: * C:\Users\fafadjigla\Downloads\LM3914asc\Draft1.asc
+
+Warning: Multiple definitions of model "rfn30ts6d" Type: Diode
+Fatal Error: x1:b12: Unknown circuit node: "nc_02" requested in behavioral source
