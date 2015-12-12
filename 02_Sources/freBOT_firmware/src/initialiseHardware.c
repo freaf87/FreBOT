@@ -18,6 +18,7 @@
 /* Private variables ---------------------------------------------------------*/
 static ERROR_HandleTypeDef errorStruct;
 /* Private function prototypes -----------------------------------------------*/
+void initSTM32F407Hardware(void);
 /* Private functions ---------------------------------------------------------*/
 /**
   * @brief  System Clock Configuration
@@ -87,3 +88,21 @@ void SystemClock_Config(void)
     __HAL_FLASH_PREFETCH_BUFFER_ENABLE();
   }
 }
+
+/**
+   * @brief  This function .
+   * @param  None
+   * @retval None
+   */
+void initSTM32F407Hardware(void) {
+	/* STM32F4xx HAL library initialization:
+	 - Configure the Flash prefetch, instruction and Data caches
+	 - Configure the Systick to generate an interrupt each 1 msec
+	 - Set NVIC Group Priority to 4
+	 - Global MSP (MCU Support Package) initialization
+	 */
+	SystemClock_Config(); //Configure the system clock to 168 MHz
+	HAL_Init();
+}
+
+

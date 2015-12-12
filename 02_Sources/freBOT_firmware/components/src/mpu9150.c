@@ -15,62 +15,23 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /*
- * main.c
+ * mpl9150.c
  *
- *  Created on: Dec 4, 2015
+ *  Created on: Dec 12, 2015
  *      @Author: freaf87
  *      @version V1.0.0
  *      @brief:
+ 
 */
 
 /* Includes ------------------------------------------------------------------*/
-#include "freBOT_error.h"
-#include "main.h"
-#include "initialiseHardware.h"
-#include "cmsis_os.h"
-#include "diag/Trace.h"
-
+#include "mpu9150.h"
 /* Private variables ---------------------------------------------------------*/
-
-
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
-void initSTM32F407Hardware(void);
 /* Private functions ---------------------------------------------------------*/
-
-/**
-  * @brief  Main program
-  * @param  None
-  * @retval None
-  */
-
-
-int main(void)
-{
-	/* Microcontoller initialization */
-	initSTM32F407Hardware();
-
-	/* freBOT initialization */
-	freBOT_init();
-
-	/* Start scheduler */
-	trace_printf("Starting kernel ... \r\n");
-	//osKernelStart();
-
-
-
-  /* If all is well then main() will never reach here as the scheduler will
-  now be running the tasks. If main() does reach here then it is likely that
-  there was insufficient heap memory available for the idle task to be created.
-  Check then the heap */
-  while(1){
-
-	  HAL_Delay(500);
-	  BSP_LED_Toggle(USERled);
-  }
-}
 
 

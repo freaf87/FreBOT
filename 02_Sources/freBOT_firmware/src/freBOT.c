@@ -11,11 +11,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "freBOT.h"
 #include "freBOT_error.h"
+#include "serial.h"
+
 
 static ERROR_HandleTypeDef errorStruct;
-
-
-
 
  /**
   * @brief freBOT Driver version number V1.0.0
@@ -44,10 +43,7 @@ GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {KEY_BUTTON_GPIO_PORT};
 const uint16_t BUTTON_PIN[BUTTONn] = {KEY_BUTTON_PIN}; 
 const uint8_t BUTTON_IRQn[BUTTONn] = {KEY_BUTTON_EXTI_IRQn};
 
-uint32_t I2cxTimeout = I2Cx_TIMEOUT_MAX;    /*<! Value of Timeout when I2C communication fails */ 
 
-
-static I2C_HandleTypeDef    I2cHandle;
 /**
   * @}
   */ 
@@ -56,19 +52,6 @@ static I2C_HandleTypeDef    I2cHandle;
 /** @defgroup STM32F4_DISCOVERY_LOW_LEVEL_Private_Functions
 * @{
 */ 
-static void     I2Cx_Init(void);
-static void     I2Cx_WriteData(uint8_t Addr, uint8_t Reg, uint8_t Value);
-static uint8_t  I2Cx_ReadData(uint8_t Addr, uint8_t Reg);
-static void     I2Cx_MspInit(void);
-static void     I2Cx_Error(uint8_t Addr);
-
-/*
-// Link functions for Accelerometer peripheral
-void            MPU9150_IO_Init(void);
-void            MPU9150_IO_ITConfig(void);
-void            MPU9150_IO_Write(uint8_t *pBuffer, uint8_t WriteAddr, uint16_t NumByteToWrite);
-void            MPU9150_IO_Read(uint8_t *pBuffer, uint8_t ReadAddr, uint16_t NumByteToRead);
-*/
 /**
   * @}
   */
@@ -359,7 +342,7 @@ void MOTOR_DIRECTION_PINS_INIT (void)
 /**
 	* @brief  set the desired Direction
 	* @param  MOTOR - Motor's name(1 or 2) 
-	*					DIR 	- Motor�s Direction (1 for Clockwise and -1 for counterclockwise) 
+	*					DIR 	- Motor's Direction pin (1 for Clockwise and -1 for counterclockwise)
 	* @retval None
 	*/
 void MOTOR_CONTROL_SET_DIRECTION(char MOTOR, int DIR)
@@ -389,140 +372,6 @@ void MOTOR_CONTROL_SET_DIRECTION(char MOTOR, int DIR)
 		}
 		
 }
-
-/**
-	* @}
-	*/ 	
-/** @defgroup FREBOT_LOW_LEVEL_BUS_Functions
-  * @{
-  */ 
-/*******************************************************************************
-                            BUS OPERATIONS
-*******************************************************************************/
-/******************************* I2C Routines**********************************/
-/**
-  * @brief  Configures I2C interface.
-  * @param  None
-  * @retval None
-*/
-static void I2Cx_Init(void)
-{
-  if(HAL_I2C_GetState(&I2cHandle) == HAL_I2C_STATE_RESET)
-  {
-    /* DISCOVERY_I2Cx peripheral configuration */
-    I2cHandle.Init.ClockSpeed = BSP_I2C_SPEED;
-    I2cHandle.Init.DutyCycle = I2C_DUTYCYCLE_2;
-    I2cHandle.Init.OwnAddress1 = 0x33;
-    I2cHandle.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-    I2cHandle.Instance = FREBOT_I2Cx;
-      
-    /* Init the I2C */
-    I2Cx_MspInit();
-    HAL_I2C_Init(&I2cHandle);
-  }
-}
-
-/**
-  * @brief  Write a value in a register of the device through BUS.
-  * @param  Addr: Device address on BUS Bus.  
-  * @param  Reg: The target register address to write
-  * @param  Value: The target register value to be written 
-  * @retval HAL status
-  */
-static void I2Cx_WriteData(uint8_t Addr, uint8_t Reg, uint8_t Value)
-{
-  HAL_StatusTypeDef status = HAL_OK;
-  
-  status = HAL_I2C_Mem_Write(&I2cHandle, Addr, (uint16_t)Reg, I2C_MEMADD_SIZE_8BIT, &Value, 1, I2cxTimeout); 
-
-  /* Check the communication status */
-  if(status != HAL_OK)
-  {
-    /* Execute user timeout callback */
-    I2Cx_Error(Addr);
-  }
-}
-
-/**
-  * @brief  Read a register of the device through BUS
-  * @param  Addr: Device address on BUS  
-  * @param  Reg: The target register address to read
-  * @retval HAL status
-  */
-static uint8_t  I2Cx_ReadData(uint8_t Addr, uint8_t Reg)
-{
-  HAL_StatusTypeDef status = HAL_OK;
-  uint8_t value = 0;
-  
-  status = HAL_I2C_Mem_Read(&I2cHandle, Addr, (uint16_t)Reg, I2C_MEMADD_SIZE_8BIT, &value, 1,I2cxTimeout);
-  
-  /* Check the communication status */
-  if(status != HAL_OK)
-  {
-    /* Execute user timeout callback */
-    I2Cx_Error(Addr);
-  }
-  return value;
-}
-
-/**
-  * @brief  Manages error callback by re-initializing I2C.
-  * @param  Addr: I2C Address
-  * @retval None
-  */
-static void I2Cx_Error(uint8_t Addr)
-{
-  /* De-initialize the I2C communication bus */
-  HAL_I2C_DeInit(&I2cHandle);
-  
-  /* Re-Initialize the I2C communication bus */
-  I2Cx_Init();
-}
-
-/**
-  * @brief I2C MSP Initialization
-  * @param None
-  * @retval None
-  */
-static void I2Cx_MspInit(void)
-{
-  GPIO_InitTypeDef  GPIO_InitStruct;
-
-  /* Enable I2C GPIO clocks */
-  FREBOT_I2Cx_SCL_SDA_GPIO_CLK_ENABLE();
-
-  /* DISCOVERY_I2Cx SCL and SDA pins configuration ---------------------------*/
-  GPIO_InitStruct.Pin = FREBOT_I2Cx_SCL_PIN | FREBOT_I2Cx_SDA_PIN; 
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
-  GPIO_InitStruct.Pull  = GPIO_NOPULL;
-  GPIO_InitStruct.Alternate  = FREBOT_I2Cx_SCL_SDA_AF;
-  HAL_GPIO_Init(FREBOT_I2Cx_SCL_SDA_GPIO_PORT, &GPIO_InitStruct);     
-
-  /* Enable the DISCOVERY_I2Cx peripheral clock */
-  FREBOT_I2Cx_CLK_ENABLE();
-
-  /* Force the I2C peripheral clock reset */
-  FREBOT_I2Cx_FORCE_RESET();
-
-  /* Release the I2C peripheral clock reset */
-  FREBOT_I2Cx_RELEASE_RESET();
-
-  /* Enable and set I2Cx Interrupt to the highest priority */
-  HAL_NVIC_SetPriority(FREBOT_I2Cx_EV_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(FREBOT_I2Cx_EV_IRQn);
-
-  /* Enable and set I2Cx Interrupt to the highest priority */
-  HAL_NVIC_SetPriority(FREBOT_I2Cx_ER_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(FREBOT_I2Cx_ER_IRQn); 
-}
-/**
-	* @}
-	*/ 	
-	
-/**
-	* @}
-	*/ 	
 
 /**
   * @brief  This function is executed in case of error occurrence.
