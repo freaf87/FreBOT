@@ -27,6 +27,29 @@
 #ifndef INC_MPU9150_H_
 #define INC_MPU9150_H_
 
+#include "stm32f4xx_hal.h"
+/****************************** Defines *******************************/
+/***************************Globals *******************************************/
+/***************************** Prototypes *****************************/
+void MPU_INT_GPIO_Config(void);
+void MPU9150_Timer_Init(void) ;
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim);
+void MPU9150_gyroDataReady(void);
+void MPU9150_GetReadings(void);
+void MPU9150_I2C_Master_Init(void);
+int  MPU9150_I2C_WriteRegister(unsigned char slave_addr,
+                                        unsigned char reg_addr,
+                                        unsigned short len,
+                                        const unsigned char *data_ptr);
+int MPU9150_I2C_ReadRegister(unsigned char slave_addr,
+                                       unsigned char reg_addr,
+                                       unsigned short len,
+                                       unsigned char *data_ptr);
+void MPU9150_Init(void);
+
+void gyro_data_ready_cb(void);
+void mdelay(unsigned long nTime);
+int get_tick_count(unsigned long *count);
 
 
 #endif /* INC_MPU9150_H_ */

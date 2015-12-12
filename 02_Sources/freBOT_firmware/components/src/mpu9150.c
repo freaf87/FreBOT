@@ -26,6 +26,18 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "mpu9150.h"
+
+#include "stm32f4xx_hal.h"
+#include "inv_mpu.h"
+#include "inv_mpu_dmp_motion_driver.h"
+#include "invensense.h"
+#include "invensense_adv.h"
+#include "mltypes.h"
+#include "mpu.h"
+#include "log.h"
+#include "packet.h"
+#include "eMPL_outputs.h"
+
 /* Private variables ---------------------------------------------------------*/
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/

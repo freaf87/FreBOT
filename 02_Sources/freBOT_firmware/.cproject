@@ -81,7 +81,13 @@
 							</tool>
 							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.423806059" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1096633172" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/freaf87/Projects/freBOT/02_Sources/freBOT_firmware/inc"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/inc"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/mpl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/driver/eMPL&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/driver/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/driver/stm32L&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/mllite&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/eMPL-hal&quot;"/>
 									<listOptionValue builtIn="false" value="/home/freaf87/Projects/freBOT/02_Sources/freBOT_firmware/system/inc"/>
 									<listOptionValue builtIn="false" value="/home/freaf87/Projects/freBOT/02_Sources/freBOT_firmware/system/inc/cmsis"/>
 									<listOptionValue builtIn="false" value="/home/freaf87/Projects/freBOT/02_Sources/freBOT_firmware/system/inc/stm32f4-hal"/>
@@ -96,6 +102,11 @@
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.1561102231" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="EMPL"/>
+									<listOptionValue builtIn="false" value="EMPL_TARGET_STM32F4"/>
+									<listOptionValue builtIn="false" value="MPL_LOG_NDEBUG=1"/>
+									<listOptionValue builtIn="false" value="MPU9150"/>
+									<listOptionValue builtIn="false" value="USE_DMP"/>
 									<listOptionValue builtIn="false" value="USE_FULL_ASSERT"/>
 									<listOptionValue builtIn="false" value="TRACE"/>
 									<listOptionValue builtIn="false" value="OS_USE_TRACE_SEMIHOSTING_DEBUG"/>
@@ -156,6 +167,7 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections.1779272485" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.gcsections" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths.2073735220" name="Library search path (-L)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/ldscripts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/mpl&quot;"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile.708225768" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.cpp.linker.scriptfile" valueType="stringList">
 									<listOptionValue builtIn="false" value="mem.ld"/>
