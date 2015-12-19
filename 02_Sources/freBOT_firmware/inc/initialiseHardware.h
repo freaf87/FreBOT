@@ -21,6 +21,6 @@
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 void SystemClock_Config(void);
-
+void initSTM32F407Hardware(void);
 
 #endif /* INITIALISEHARDWARE_H_ */

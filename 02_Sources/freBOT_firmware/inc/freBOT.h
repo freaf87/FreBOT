@@ -81,34 +81,6 @@ typedef enum
 
 
 
-	 	 	 	 	 	 	 	 /***  Motors  ***/
-
-/* Definition for TIMx clock resources */
-#define MOTOR_TIMx                           			TIM9
-#define MOTOR_TIMx_CLK_ENABLE()                			__HAL_RCC_TIM9_CLK_ENABLE()
-
-/* Definition for MOTOR PWM Pins */
-#define MOTOR_TIMx_CHANNEL_GPIO_PORT()       				__HAL_RCC_GPIOA_CLK_ENABLE()
-#define MOTOR_GPIO_PIN_CHANNEL1              			GPIO_PIN_2
-#define MOTOR_GPIO_PIN_CHANNEL2              			GPIO_PIN_3
-
-/* Period Value  */
-#define PERIOD_VALUE       									2799
-/* Capture Compare 1 Value  */
-#define PULSE_VALUE       									2799/2      	
-
-
-#define MOTOR1_DIR_PIN                         GPIO_PIN_11
-#define MOTOR1_DIR_GPIO_PORT                   GPIOD
-#define MOTOR1_DIR_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOD_CLK_ENABLE()  
-#define MOTOR1_DIR_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOD_CLK_DISABLE() 
-
-#define MOTOR2_DIR_PIN                         GPIO_PIN_12
-#define MOTOR2_DIR_GPIO_PORT                   GPIOD
-#define MOTOR2_DIR_GPIO_CLK_ENABLE()           __HAL_RCC_GPIOD_CLK_ENABLE()  
-#define MOTOR2_DIR_GPIO_CLK_DISABLE()          __HAL_RCC_GPIOD_CLK_DISABLE() 
-
-#define BATTERIE_VOLTAGE  									12
 
 	 	 	 	 	 	 	 	 /***  MPU9150  ***/
 /*  Interrupt PIN */

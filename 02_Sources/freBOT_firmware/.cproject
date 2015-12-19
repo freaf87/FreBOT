@@ -82,6 +82,7 @@
 							<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.423806059" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1096633172" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="${ProjDirPath}/inc"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/system/inc/diag&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/mpl&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/driver/eMPL&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Library/Invensense_core/driver/include&quot;"/>

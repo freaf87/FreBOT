@@ -28,7 +28,11 @@
 #include "main.h"
 #include "initialiseHardware.h"
 #include "cmsis_os.h"
-#include "diag/Trace.h"
+
+#ifdef TRACE
+	#include "Trace.h"
+	#define freBOT_printf(msg) trace_printf(msg);
+#endif /*TRACE*/
 
 /* Private variables ---------------------------------------------------------*/
 
@@ -38,7 +42,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
-void initSTM32F407Hardware(void);
+
 /* Private functions ---------------------------------------------------------*/
 
 /**
@@ -52,12 +56,12 @@ int main(void)
 {
 	/* Microcontoller initialization */
 	initSTM32F407Hardware();
-
 	/* freBOT initialization */
 	freBOT_init();
 
 	/* Start scheduler */
-	trace_printf("Starting kernel ... \r\n");
+	freBOT_printf("Starting kernel ... \r\n");
+
 	//osKernelStart();
 
 
