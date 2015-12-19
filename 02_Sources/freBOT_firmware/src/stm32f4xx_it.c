@@ -41,7 +41,7 @@
 #include "main.h"
 #include "stm32f4xx_it.h"
 #include "cmsis_os.h"
-
+#include "optional.h"
 /** @addtogroup STM32F4xx_HAL_Examples
   * @{
   */

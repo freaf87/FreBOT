@@ -24,60 +24,7 @@
 /**
  *  freBOT HAL Components
  **/
- 	 	 	 	 	 	 	 /***  LEds  ***/
-typedef enum
-{
-		USERled		= 0,
-		ERRORled	= 1
-} Led_TypeDef;
 
-typedef enum 
-{  
-  BUTTON_KEY = 0,
-} Button_TypeDef;
-
-typedef enum
-{
-	BUTTON_MODE_GPIO = 0,
-	BUTTON_MODE_EXTI = 1
-} ButtonMode_TypeDef;
-
-#define LEDn                             		2
-
-#define USERled_PIN                         GPIO_PIN_1
-#define USERled_GPIO_PORT                   GPIOE
-#define USERled_GPIO_CLK_ENABLE()           __GPIOE_CLK_ENABLE()  
-#define USERled_GPIO_CLK_DISABLE()          __GPIOE_CLK_DISABLE()  
-
-#define ERRORled_PIN                         GPIO_PIN_0
-#define ERRORled_GPIO_PORT                   GPIOE
-#define ERRORled_GPIO_CLK_ENABLE()           __GPIOE_CLK_ENABLE()  
-#define ERRORled_GPIO_CLK_DISABLE()          __GPIOE_CLK_DISABLE() 
-
-#define LEDx_GPIO_CLK_ENABLE(__INDEX__)			do{	if((__INDEX__)== 0)  USERled_GPIO_CLK_ENABLE(); else\
-																								if((__INDEX__)== 1)  ERRORled_GPIO_CLK_ENABLE();\
-																							} while(0)
-
-#define LEDx_GPIO_CLK_DISABLE(__INDEX__)			do{	if((__INDEX__)== 0)  USERled_GPIO_CLK_DISABLE(); else\
-																								  if((__INDEX__)== 1)  ERRORled_GPIO_CLK_DISABLE();\
-																							} while(0)
-	 	 	 	 	 	 	 	 	 /***  Buttons  ***/
-#define BUTTONn                          1 
-
-/**
- * @brief Wakeup push-button
- */
-#define KEY_BUTTON_PIN                GPIO_PIN_0
-#define KEY_BUTTON_GPIO_PORT          GPIOA
-#define KEY_BUTTON_GPIO_CLK_ENABLE()  __GPIOA_CLK_ENABLE()
-#define KEY_BUTTON_GPIO_CLK_DISABLE() __GPIOA_CLK_DISABLE()
-#define KEY_BUTTON_EXTI_IRQn          EXTI0_IRQn 
-
-#define BUTTONx_GPIO_CLK_ENABLE(__INDEX__)    do{if((__INDEX__) == 0) KEY_BUTTON_GPIO_CLK_ENABLE(); \
-                                                }while(0)
-
-#define BUTTONx_GPIO_CLK_DISABLE(__INDEX__)    do{if((__INDEX__) == 0) KEY_BUTTON_GPIO_CLK_DISABLE(); \
-                                                 }while(0)
 
 
 
@@ -153,15 +100,8 @@ typedef enum
  *  Private function prototypes
  **/
 uint32_t BSP_GetVersion(void);
-void     BSP_LED_Init(Led_TypeDef Led);
-void     BSP_LED_On(Led_TypeDef Led);
-void     BSP_LED_Off(Led_TypeDef Led);
-void     BSP_LED_Toggle(Led_TypeDef Led);
-void     BSP_PB_Init(Button_TypeDef Button, ButtonMode_TypeDef Mode);
-uint32_t BSP_PB_GetState(Button_TypeDef Button);
 
-void PB_EXTILine0_Config(void);
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
+
 void MOTOR_TIM_init(void);
 void MOTOR_DIRECTION_PINS_INIT (void);
 void MOTOR_CONTROL_SET_DIRECTION(char MOTOR, int DIR);

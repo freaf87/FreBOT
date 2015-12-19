@@ -28,6 +28,7 @@
 #include "motor.h"
 #include "stm32f4xx_hal.h"
 #include "freBOT_error.h"
+
 /* Private variables ---------------------------------------------------------*/
 static ERROR_HandleTypeDef errorStruct;
 /* Timer handler declaration */

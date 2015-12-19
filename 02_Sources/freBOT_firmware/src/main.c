@@ -14,7 +14,6 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
  * main.c
  *
  *  Created on: Dec 4, 2015
@@ -24,10 +23,11 @@
 */
 
 /* Includes ------------------------------------------------------------------*/
-#include "freBOT_error.h"
 #include "main.h"
+#include "freBOT_error.h"
 #include "initialiseHardware.h"
 #include "cmsis_os.h"
+#include "optional.h"
 
 #ifdef TRACE
 	#include "Trace.h"
@@ -74,6 +74,7 @@ int main(void)
 
 	  HAL_Delay(500);
 	  BSP_LED_Toggle(USERled);
+	  BSP_LED_Toggle(ERRORled);
   }
 }
 
